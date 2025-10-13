@@ -12,7 +12,7 @@
 </style>
 
 
-<div class="container section--container">
+<div class="{% if section.settings.container != true %}  container {% endif %} section--container">
   <div class="{% if section.settings.enable_mobile_slider %}mobile-slider-container swiper{% endif %} ">
     <div class="category-grid grid grid--{{ section.settings.collections_to_show }}-col-desktop grid--{{ section.settings.collections_to_show_mobile }}-col-tablet-down {% if section.settings.enable_mobile_slider %}swiper-wrapper{% endif %}" id="category-slider-{{ section.id }}">
       {% for block in section.blocks %}
@@ -338,6 +338,12 @@ p.collection-btn {
       "step": 1,
       "default": 2,
       "label": "Collections to show mobile"
+    },
+     {
+      "type": "checkbox",
+      "id": "container",
+      "label": "Full screen",
+      "default": false
     },
     {
       "type": "checkbox",
