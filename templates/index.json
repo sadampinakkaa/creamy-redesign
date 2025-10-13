@@ -259,7 +259,7 @@
       "settings": {
         "collections_to_show": 6,
         "collections_to_show_mobile": 2,
-        "enable_mobile_slider": false
+        "enable_mobile_slider": true
       }
     },
     "rich_text_tTE4D6": {
