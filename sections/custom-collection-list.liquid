@@ -1,0 +1,403 @@
+<div class="category-feature-section page-width">
+  <div class="container {% if section.settings.enable_mobile_slider %}mobile-slider-container swiper{% endif %}">
+    <div class="category-grid grid grid--{{ section.settings.collections_to_show }}-col-desktop grid--{{ section.settings.collections_to_show_mobile }}-col-tablet-down {% if section.settings.enable_mobile_slider %}swiper-wrapper{% endif %}" id="category-slider-{{ section.id }}">
+      {% for block in section.blocks %}
+        <div class="category-item grid__item {% if section.settings.enable_mobile_slider %}swiper-slide{% endif %} {% if block.settings.overlay %} category-item-overlay {% endif %}" {{ block.shopify_attributes }}>
+          <div class="category-image">
+            {% if block.settings.image != blank %}
+              {% if block.settings.link != blank %}
+                <a href="{{ block.settings.link }}">
+              {% endif %}
+              
+              <img 
+                src="{{ block.settings.image | image_url: width: 450 , height: 580 }}" 
+                alt="{{ block.settings.image.alt | default: block.settings.title }}"
+                loading="lazy"
+                width="249"
+                height="388"
+              >
+              
+              {% if block.settings.link != blank %}
+                </a>
+              {% endif %}
+            {% else %}
+              <div class="placeholder-image">
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            {% endif %}
+          </div>
+          {% if block.settings.title != blank %}
+          <div style="color: {{ block.settings.color }} " class="category-title {% if block.settings.overlay %} category-title-overlay {% endif %}">
+            <p style="font-size:{{ block.settings.title_font_size }}px;" class="collection-title">{{ block.settings.title | default: 'Category Title' }}</p>
+            <p style="font-size:{{ block.settings.subtext_font_size }}px;" class="collection-subtext">{{ block.settings.sub-text }} </p>
+             {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}">
+            {% endif %}
+            <p class="collection-btn" > {{ block.settings.button }} </p>
+            {% if block.settings.link != blank %}
+              </a>
+            {% endif %}
+          </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    
+    {% if section.settings.enable_mobile_slider %}
+    <div class="swiper-button-prev" id="prev-{{ section.id }}">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="swiper-button-next" id="next-{{ section.id }}">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    {% endif %}
+  </div>
+</div>
+
+{% if section.settings.enable_mobile_slider %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('🎯 Slider Script Loaded');
+  console.log('📱 Window Width:', window.innerWidth);
+  
+  if (window.innerWidth <= 768) {
+    console.log('✅ Mobile device detected - Initializing Swiper');
+    
+    const swiperContainer = document.querySelector('.mobile-slider-container.swiper');
+    
+    console.log('🎠 Swiper Container:', swiperContainer);
+    
+    if (swiperContainer) {
+      const swiper = new Swiper('.mobile-slider-container.swiper', {
+        slidesPerView: {{ section.settings.collections_to_show_mobile }},
+        spaceBetween: 15,
+        navigation: {
+          nextEl: '#next-{{ section.id }}',
+          prevEl: '#prev-{{ section.id }}',
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 5
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 15
+          }
+        },
+        on: {
+          init: function() {
+            console.log('🎉 Swiper Initialized Successfully');
+            console.log('📝 Total Slides:', this.slides.length);
+          },
+          slideChange: function() {
+            console.log('🔄 Slide Changed - Active Index:', this.activeIndex);
+          }
+        }
+      });
+      console.log('💫 Swiper Instance:', swiper);
+    } else {
+      console.error('❌ Swiper container not found!');
+    }
+  } else {
+    console.log('🖥️ Desktop device - Slider not initialized');
+  }
+});
+</script>
+
+
+{% endif %}
+
+<style>
+.category-feature-section {
+  padding: 20px 0;
+  overflow:hidden;
+}
+
+.mobile-slider-container {
+  position: relative;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap:no-wrap;
+  
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.category-grid::-webkit-scrollbar {
+  display: none; 
+}
+
+.category-image {
+  margin-bottom: 5px; 
+  overflow:hidden;
+  line-height:0;
+}
+
+.category-image img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.category-item:hover .category-image img {
+  {% comment %} transform: scale(1.05); {% endcomment %}
+}
+
+.placeholder-image {
+  aspect-ratio: 1;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.placeholder-svg {
+  width: 80px;
+  height: 80px;
+  opacity: 0.5;
+}
+
+.category-title p {
+  font-weight: 700;
+ 
+  margin: 0;
+  text-align:left;
+  transition: color 0.3s ease;
+}
+
+.category-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.category-title-overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 30px 28px; 
+}
+
+.category-item-overlay {
+  position: relative;
+}
+
+p.collection-title {
+  margin-bottom: 10px;
+}
+
+p.collection-subtext {
+  margin-bottom: 20px;
+}
+
+p.collection-btn {
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 10;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+   background: rgba(0, 0, 0, .4);
+}
+
+.swiper-button-prev {
+  left: 10%;
+}
+
+.swiper-button-next {
+  right: 10%;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #f5f5f5;
+  color:#000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  color: #fff;
+  border-radius:50%;
+  width:24px;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .category-feature-section {
+    padding: 40px ;
+    padding-top:40px;
+    padding-bottom:0;
+  }
+
+  .category-feature-section.page-width {
+    padding-left:0;
+    padding-right:0;
+  }
+  
+  .category-title p {
+    font-weight:500;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Show swiper buttons on mobile when slider is enabled */
+  .mobile-slider-container .swiper-button-prev,
+  .mobile-slider-container .swiper-button-next {
+    display: flex;
+  }
+  
+  /* Override default scroll behavior when swiper is active */
+  .mobile-slider-container .category-grid {
+    overflow-x: visible;
+    flex-wrap: nowrap;
+  }
+  
+  .mobile-slider-container .swiper-wrapper {
+    flex-wrap: nowrap;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+   display:none;
+  }
+}
+
+@media (min-width: 769px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+  .category-grid {
+  overflow-x:scroll;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "custom-collection-list",
+  "tag": "section",
+  "class": "section-category-feature",
+  
+  "settings": [
+    {
+      "type": "range",
+      "id": "collections_to_show",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 4,
+      "label": "Collections to show desktop"
+    },   
+    {
+      "type": "range",
+      "id": "collections_to_show_mobile",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2,
+      "label": "Collections to show mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_mobile_slider",
+      "label": "Enable slider on mobile",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Category Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "overlay",
+          "label": "Overlay text"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Category Title",
+          "default": "Category Name"
+        },
+        {
+          "type": "range",
+          "id": "title_font_size",
+          "min": 8,
+          "max": 36,
+          "step": 1,
+          "default": 16,
+          "label": "Title font size"
+        },   
+        {
+          "type": "text",
+          "id": "sub-text",
+          "label": "Sub Text"
+        },
+        {
+          "type": "range",
+          "id": "subtext_font_size",
+          "min": 8,
+          "max": 36,
+          "step": 1,
+          "default": 16,
+          "label": "Subtext font size"
+        }, 
+        {
+          "type": "text",
+          "id": "button",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Category Link"
+        },
+        {
+         "type": "color",
+         "id": "color",
+         "label": "Font color",
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "custom collection list"
+    }
+  ]
+}
+{% endschema %}
