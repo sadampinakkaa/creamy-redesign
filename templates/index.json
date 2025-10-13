@@ -384,6 +384,7 @@
       "block_order": [
         "collection_UHtfzK"
       ],
+      "disabled": true,
       "name": "Custom Featured collections",
       "settings": {
         "subheading": "Your title",
