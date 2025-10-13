@@ -1,15 +1,17 @@
 @font-face {
-	font-family: 'General Sans Variable';
-	src: url('GeneralSans-Medium.otf') format('opentype');
-	font-weight: 500;
-	font-style: normal;
+  font-family: "TSTARPRO Headline";
+  src: url("https://cdn.shopify.com/s/files/1/0648/5298/3875/files/TSTARPRO-Headline.woff2?v=1755756896") format("woff2");
+  font-weight: 700; /* If the file is a single weight, declare it here */
+  font-style: normal;
+  font-display: swap;
 }
 
-@font-face {
-	font-family: 'General Sans Variable';
-	src: url('GeneralSans-Regular.otf') format('opentype');
-	font-weight: 400;
-	font-style: normal;
+
+h2 , h1 ,h3 {
+  
+  font-family: "TSTARPRO Headline", sans-serif !important;
+  
+  font-weight: 700 !important;
 }
 
 html {
