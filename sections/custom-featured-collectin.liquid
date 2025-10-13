@@ -151,7 +151,7 @@
                 {% if collection.metafields.custom.variant_color_selector != blank %}
                   {% for variant in collection.metafields.custom.variant_color_selector.value %}
                     {% unless variant.product.tags contains 'secretsale' or variant.product.metafields.custom.hide_on_collection_page == true %}
-                      {%- render 'custom-product-card-1', product: variant.product, variant: variant, collection: collection, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition, hide_ratings: section.settings.hide_ratings -%}
+                      {%- render 'custom-product-card-1', card_product: variant.product, variant: variant, collection: collection, sizes_attribute: sizes_attribute, reveal: settings.stagger_products_apparition, hide_ratings: section.settings.hide_ratings -%}
                     {% endunless %}
                   {% endfor %}
                 {% else %}
