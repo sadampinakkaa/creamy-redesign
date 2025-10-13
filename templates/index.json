@@ -15,7 +15,7 @@
         "image_ptW7DJ": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/CMD_1_nowopen_FINAL_1_NF_GZJHVB_N.webp",
+            "image": "shopify://shop_images/Creamy_Banner_1.webp",
             "text_position": "top_center",
             "subheading": "",
             "title": "",
@@ -214,7 +214,7 @@
     "rich_text_VnE84E": {
       "type": "rich-text",
       "custom_css": [
-        "h3 {font-size: 24px;}"
+        "h3 {font-size: 24px; margin-bottom: -40px;}"
       ],
       "name": "Rich text",
       "settings": {
@@ -339,7 +339,7 @@
         "collections_to_show_mobile": 2,
         "container": false,
         "enable_mobile_slider": true,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 0,
         "mobile_padding_top": 0,
         "mobile_padding_bottom": 0
