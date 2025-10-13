@@ -7,10 +7,30 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
- {
+{
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "rich_text_PCw8dd": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<h2><strong>Everyone Feel comfortable in cremy</strong></h2>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "#282828",
+        "text_color": "#ffffff",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -82,17 +102,17 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "title": "creamy fabrics",
-            "content": "<p>Wir sind spezialisiert auf hochwertiger Shapewear, die entwickelt wurde, um die Figur zu betonen und das Selbstbewusstsein zu stärken. Unsere Produkte bieten bequemen Tragekomfort und unterstützen dabei, die gewünschte Silhouette zu erreichen.</p>"
-          }
-        },
         "links_eJ69Pb": {
           "type": "links",
           "settings": {
             "menu": "footer",
+            "block_class": "new-big-redesign-ab-test-a"
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "information",
             "block_class": "new-big-redesign-ab-test-a"
           }
         },
@@ -101,13 +121,6 @@
           "settings": {
             "menu": "men",
             "block_class": "new-big-redesign-ab-test-b"
-          }
-        },
-        "links": {
-          "type": "links",
-          "settings": {
-            "menu": "information",
-            "block_class": "new-big-redesign-ab-test-a"
           }
         },
         "newsletter": {
@@ -149,6 +162,7 @@
     }
   },
   "order": [
+    "rich_text_PCw8dd",
     "text-with-icons",
     "newsletter",
     "footer"
