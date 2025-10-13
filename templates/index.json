@@ -85,7 +85,7 @@
         "category_tBzfk8": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/2017-10-Model-Front2_fec219df-bceb-404a-b1b7-25549402cb11.jpg",
+            "image": "shopify://shop_images/Shapewear_Mobile_3_1.png",
             "overlay": true,
             "title": "Shapewear",
             "title_font_size": 20,
@@ -99,7 +99,7 @@
         "category_tYKqaR": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/2017-13-Model-Front_a8bf75ba-6d5b-4d93-bf51-c66a9b6ba55a.jpg",
+            "image": "shopify://shop_images/BHS_Mobile_3_1_1_69a2db7f-869a-4ad4-b25a-9148f84467ab.webp",
             "overlay": true,
             "title": "BHS",
             "title_font_size": 20,
@@ -136,7 +136,7 @@
         "category_giFAVf": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/2017-10-Model-Front2.jpg",
+            "image": "shopify://shop_images/Shapewear_-_Mobile_1.png",
             "overlay": false,
             "title": "Shapewear",
             "title_font_size": 16,
@@ -150,7 +150,7 @@
         "category_eBnFgM": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/4020-13-Model-Front.jpg",
+            "image": "shopify://shop_images/BHS_-_Mobile_1.avif",
             "overlay": false,
             "title": "BHS",
             "title_font_size": 16,
@@ -164,7 +164,7 @@
         "category_9ybEJa": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/4039-63-model-front.jpg",
+            "image": "shopify://shop_images/Clothing_-_Mobile_1.avif",
             "overlay": false,
             "title": "CLOTHING",
             "title_font_size": 16,
@@ -178,7 +178,7 @@
         "category_PJDHm6": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/2017-13-Model-Front.jpg",
+            "image": "shopify://shop_images/Underwear_-_Mobile.avif",
             "overlay": false,
             "title": "Underwear",
             "title_font_size": 16,
@@ -240,7 +240,7 @@
         "category_tfmP3D": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/4038-83-model-front_773934cf-6b4f-4f78-bf05-f36d150772b3.jpg",
+            "image": "shopify://shop_images/Yoga.avif",
             "overlay": false,
             "title": "yoga",
             "title_font_size": 16,
@@ -254,7 +254,7 @@
         "category_gzLcbM": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/4021-14-Model-Front2.jpg",
+            "image": "shopify://shop_images/Pilates_2.png",
             "overlay": false,
             "title": "pilates",
             "title_font_size": 16,
@@ -268,7 +268,7 @@
         "category_4BzYBV": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/NudeSquare.jpg",
+            "image": "shopify://shop_images/Training_8c21c5b8-43fa-49f2-a5c9-59ca43244739.avif",
             "overlay": false,
             "title": "Court sports",
             "title_font_size": 16,
@@ -282,7 +282,7 @@
         "category_9bn6KN": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/2006-11-Model-Front_faebe86c-8a52-40d8-b4a1-1c305915c0bf.jpg",
+            "image": "shopify://shop_images/Lounge_1.png",
             "overlay": false,
             "title": "Lounge",
             "title_font_size": 16,
@@ -296,7 +296,7 @@
         "category_eeaRg3": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/Foto_134820.jpg",
+            "image": "shopify://shop_images/Training.avif",
             "overlay": false,
             "title": "training",
             "title_font_size": 16,
@@ -310,7 +310,7 @@
         "category_KGVgib": {
           "type": "category",
           "settings": {
-            "image": "shopify://shop_images/4037-50-model-front.jpg",
+            "image": "shopify://shop_images/Running_1.png",
             "overlay": false,
             "title": "Running",
             "title_font_size": 16,
