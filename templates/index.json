@@ -276,6 +276,9 @@
     },
     "rich_text_tTE4D6": {
       "type": "rich-text",
+      "custom_css": [
+        "@media screen and (max-width: 768px) {h2 {font-size: 12px; font-weight: 500; }}"
+      ],
       "name": "Rich text",
       "settings": {
         "subheading": "",
