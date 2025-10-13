@@ -13,6 +13,10 @@
   "sections": {
     "rich_text_PCw8dd": {
       "type": "rich-text",
+      "custom_css": [
+        ".container.vertical-breather {padding: 20px 0; font-size: 20px; font-weight: 500;}",
+        "@media screen and (max-width: 768px) {.container.vertical-breather {font-size: 12px; }}"
+      ],
       "name": "Rich text",
       "settings": {
         "subheading": "",
