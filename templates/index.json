@@ -85,10 +85,80 @@
         "collections_to_show_mobile": 1,
         "enable_mobile_slider": false
       }
+    },
+    "custom_collection_list_rBcnFW": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "category_giFAVf": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_eBnFgM": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_9ybEJa": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_PJDHm6": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_giFAVf",
+        "category_eBnFgM",
+        "category_9ybEJa",
+        "category_PJDHm6"
+      ],
+      "name": "custom collection list",
+      "settings": {
+        "collections_to_show": 4,
+        "collections_to_show_mobile": 2,
+        "enable_mobile_slider": false
+      }
     }
   },
   "order": [
     "slideshow",
-    "custom_collection_list_cxLtx6"
+    "custom_collection_list_cxLtx6",
+    "custom_collection_list_rBcnFW"
   ]
 }
