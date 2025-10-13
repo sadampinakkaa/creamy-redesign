@@ -367,6 +367,39 @@
         "button_text_color": "rgba(0,0,0,0)",
         "section_class": ""
       }
+    },
+    "custom_featured_collectin_TM4fAX": {
+      "type": "custom-featured-collectin",
+      "blocks": {
+        "collection_UHtfzK": {
+          "type": "collection",
+          "settings": {
+            "collection": "4-kaufen-nur-2-zahlen-shaping-bodysuits-von-creamy-fabrics",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_UHtfzK"
+      ],
+      "name": "Custom Featured collections",
+      "settings": {
+        "subheading": "Your title",
+        "title": "Collection",
+        "content": "",
+        "hide_ratings": false,
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": false,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
     }
   },
   "order": [
@@ -376,6 +409,7 @@
     "custom_collection_list_rBcnFW",
     "rich_text_VnE84E",
     "custom_collection_list_azGbXf",
-    "rich_text_tTE4D6"
+    "rich_text_tTE4D6",
+    "custom_featured_collectin_TM4fAX"
   ]
 }
