@@ -1,4 +1,18 @@
-<div class="container">
+<style>
+  #shopify-section-{{ section.id }} .section--container {
+    margin-top: {{ section.settings.mobile_padding_top }}px;
+    margin-bottom: {{ section.settings.mobile_padding_bottom }}px;
+  }
+  @media screen and (min-width: 1000px) {
+    #shopify-section-{{ section.id }} .section--container {
+      margin-top: {{ section.settings.padding_top }}px;
+      margin-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+</style>
+
+
+<div class="container section--container">
   <div class="{% if section.settings.enable_mobile_slider %}mobile-slider-container swiper{% endif %} ">
     <div class="category-grid grid grid--{{ section.settings.collections_to_show }}-col-desktop grid--{{ section.settings.collections_to_show_mobile }}-col-tablet-down {% if section.settings.enable_mobile_slider %}swiper-wrapper{% endif %}" id="category-slider-{{ section.id }}">
       {% for block in section.blocks %}
@@ -330,7 +344,51 @@ p.collection-btn {
       "id": "enable_mobile_slider",
       "label": "Enable slider on mobile",
       "default": false
-    }
+    },
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding top",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "Padding top (Mobile)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "Padding bottom (Mobile)",
+      "unit": "px",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
   ],
   "blocks": [
     {
