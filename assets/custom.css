@@ -24,6 +24,15 @@ html {
 	display: none !important;
 }
 
+root:{
+	--spacing-sections-desktop: 0px;
+    --spacing-sections-mobile: 0px;
+    --grid-desktop-vertical-spacing: 8px;
+    --grid-desktop-horizontal-spacing: 8px;
+    --grid-mobile-vertical-spacing: 4px;
+    --grid-mobile-horizontal-spacing: 4px;
+}
+
 body:not(.collection-ab-test-a) .product-item.product-item-a-variant,
 body:not(.collection-ab-test-b) .product-item.product-item-b-variant,
 body.collection-ab-test-a .product-item:not(.product-item-a-variant),
