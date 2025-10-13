@@ -46,6 +46,37 @@
     },
     "header": {
       "type": "header",
+      "blocks": {
+        "mega_menu_yEpjBn": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Underwear",
+            "images_position": "left",
+            "image_1": "shopify://shop_images/Training.avif",
+            "image_1_heading": "",
+            "image_1_text": "",
+            "image_1_link": "",
+            "image_2_heading": "",
+            "image_2_text": "",
+            "image_2_link": "",
+            "image_3_heading": "",
+            "image_3_text": "",
+            "image_3_link": "",
+            "image_4_heading": "",
+            "image_4_text": "",
+            "image_4_link": "",
+            "image_5_heading": "",
+            "image_5_text": "",
+            "image_5_link": "",
+            "image_6_heading": "",
+            "image_6_text": "",
+            "image_6_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_yEpjBn"
+      ],
       "custom_css": [
         "/* Make 'Summer Outlet' menu item red */a[href*=\"summer-outlet\"] {color: red !important;}"
       ],
