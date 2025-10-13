@@ -92,6 +92,7 @@
         "category_giFAVf": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/2017-10-Model-Front2.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -105,6 +106,7 @@
         "category_eBnFgM": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/4020-13-Model-Front.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -118,6 +120,7 @@
         "category_9ybEJa": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/4039-63-model-front.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -131,6 +134,7 @@
         "category_PJDHm6": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/2017-13-Model-Front.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -161,6 +165,7 @@
         "category_tfmP3D": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/4038-83-model-front_773934cf-6b4f-4f78-bf05-f36d150772b3.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -174,6 +179,7 @@
         "category_gzLcbM": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/4021-14-Model-Front2.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -187,6 +193,7 @@
         "category_4BzYBV": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/NudeSquare.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -200,6 +207,7 @@
         "category_9bn6KN": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/2006-11-Model-Front_faebe86c-8a52-40d8-b4a1-1c305915c0bf.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -213,6 +221,7 @@
         "category_eeaRg3": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/Foto_134820.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -226,6 +235,7 @@
         "category_KGVgib": {
           "type": "category",
           "settings": {
+            "image": "shopify://shop_images/4037-50-model-front.jpg",
             "overlay": false,
             "title": "Category Name",
             "title_font_size": 16,
@@ -249,7 +259,27 @@
       "settings": {
         "collections_to_show": 6,
         "collections_to_show_mobile": 2,
-        "enable_mobile_slider": true
+        "enable_mobile_slider": false
+      }
+    },
+    "rich_text_tTE4D6": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "content": "<h2><strong>CREAMY FABRICS IS A FEEL-GOOD BRAND CREATING THE NEXT GENERATION OF UNDERWEAR, CLOTHING, AND SHAPEWEAR DESIGNED FOR ALL-DAY COMFORT.</strong></h2>",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
       }
     }
   },
@@ -257,6 +287,7 @@
     "slideshow",
     "custom_collection_list_cxLtx6",
     "custom_collection_list_rBcnFW",
-    "custom_collection_list_azGbXf"
+    "custom_collection_list_azGbXf",
+    "rich_text_tTE4D6"
   ]
 }
