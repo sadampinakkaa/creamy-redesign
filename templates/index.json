@@ -93,7 +93,7 @@
             "subtext_font_size": 16,
             "button": "Buy now",
             "link": "shopify://collections/aktive-produkte",
-            "color": ""
+            "color": "#ffffff"
           }
         },
         "category_tYKqaR": {
@@ -107,7 +107,7 @@
             "subtext_font_size": 16,
             "button": "Buy now",
             "link": "",
-            "color": ""
+            "color": "#ffffff"
           }
         }
       },
