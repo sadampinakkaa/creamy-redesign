@@ -237,6 +237,14 @@
         
           {%- if variant.price < variant.compare_at_price -%}
             <span class="price price--highlight">
+              <span class="price price--compare">
+              <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+              {%- if settings.currency_code_enabled -%}
+                {{- variant.compare_at_price | money_with_currency -}}
+              {%- else -%}
+                {{- variant.compare_at_price | money_with_currency -}}
+              {%- endif -%}
+            </span>
               <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
 
               {%- if settings.currency_code_enabled -%}
@@ -246,14 +254,7 @@
               {%- endif -%}
             </span>
 
-            <span class="price price--compare">
-              <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
-              {%- if settings.currency_code_enabled -%}
-                {{- variant.compare_at_price | money_with_currency -}}
-              {%- else -%}
-                {{- variant.compare_at_price | money_with_currency -}}
-              {%- endif -%}
-            </span>
+            
           {%- else -%}
             <span class="price" data-datora-classes="price price--highlight">
               <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
