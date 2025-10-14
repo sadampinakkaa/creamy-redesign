@@ -10,7 +10,7 @@
   {%- assign blends_with_background = true -%}
 {%- endif -%}
 
-{%- style -%}
+
  {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top_mobile }}px;
@@ -24,7 +24,7 @@
     }
   }
 {%- endstyle -%}
-{%- endstyle -%}
+
 
 
 <style>
@@ -251,7 +251,7 @@
   "max": 100,
   "step": 4,
   "unit": "px",
-  "label": "t:sections.all.padding.padding_top",
+  "label": "top padding",
   "default": 36
 },
 {
@@ -261,7 +261,7 @@
   "max": 100,
   "step": 4,
   "unit": "px",
-  "label": "t:sections.all.padding.padding_bottom",
+  "label": "bottom padding",
   "default": 36
 },
 {
