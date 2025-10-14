@@ -2814,3 +2814,11 @@ a.product-item-meta__title {
 a.product-item-meta__title {
     text-align:left;
 }
+
+label.color-swatch__item {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: none;
+}
