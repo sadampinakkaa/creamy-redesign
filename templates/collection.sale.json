@@ -22,6 +22,9 @@
     },
     "rich_text_hJLKAz": {
       "type": "rich-text",
+      "custom_css": [
+        ".content-box.content-box--medium.content-box--text-left.content-box--left.text-container {margin: 0;}"
+      ],
       "name": "Rich text",
       "settings": {
         "subheading": "",
