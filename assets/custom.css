@@ -2819,8 +2819,7 @@ label.color-swatch__item {
     width: 16px !important;
     height: 16px !important;
     border-radius: 2px !important;
-  border: 1px solid #333 !important;
-    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #333;
+ 
 }
 .product-item-meta__swatch-list {
 	gap:7px !important;
@@ -2831,4 +2830,11 @@ label.color-swatch__item {
 }
 .color-swatch__item:before, .color-swatch__item:after{
 	border:none;
+}
+input.color-swatch__radio:checked + label.color-swatch__item {
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 2px !important;
+    border: 1px solid #333 !important;
+    box-shadow: 0 0 0 1px #fff, 0 0 0 2px #333;
 }
