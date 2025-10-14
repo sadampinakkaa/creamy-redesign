@@ -70,19 +70,19 @@
 
 {% comment %} custom badge start {% endcomment %}
 
-   <div class="hb_badge-text__collection--badge">
+   <div class="hb_badge-text__collection--badge badge">
   {%- comment -%} Size and Color Option Badges {%- endcomment -%}
   {% if variant.metafields.custom.badge_text_size_option != blank %}
-    <span class="hb_badge-text__variant--option">{{ variant.metafields.custom.badge_text_size_option }}</span>
+    <span class="hb_badge-text__variant--option  badge-text">{{ variant.metafields.custom.badge_text_size_option }}</span>
   {% endif %}
   {% if variant.metafields.custom.badge_text_color_option != blank %}
-    <span class="hb_badge-text__variant--option">{{ variant.metafields.custom.badge_text_color_option }}</span>
+    <span class="hb_badge-text__variant--option  badge-text">{{ variant.metafields.custom.badge_text_color_option }}</span>
   {% endif %}
 
   {%- comment -%} Support Level Badge {%- endcomment -%}
   {% if product.metafields.custom.support_level != blank %}
     {% assign support_level = product.metafields.custom.support_level | downcase %}
-    <span class="hb_badge-text__variant--option">
+    <span class="hb_badge-text__variant--option badge-text">
       {% case support_level %}
         {% when 'light' %}
           <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-auto w-3" data-testid="light">
@@ -126,7 +126,7 @@
   {% assign current_date = 'now' | date: '%s' | plus: 0 %}
   {% assign days_difference = current_date | minus: created_date | divided_by: 86400 %}
   {% if days_difference <= 30 %}
-    <span class="hb_badge-text__variant--option">New</span>
+    <span class="hb_badge-text__variant--option  badge-text">New</span>
   {% endif %}
 
   {%- comment -%} Custom Badges (Split by |) {%- endcomment -%}
@@ -135,14 +135,14 @@
     {% for badge in badges %}
       {% assign badge_trimmed = badge | strip %}
       {% if badge_trimmed != blank %}
-        <span class="hb_badge-text__variant--option">{{ badge_trimmed }}</span>
+        <span class="hb_badge-text__variant--option  badge-text">{{ badge_trimmed }}</span>
       {% endif %}
     {% endfor %}
   {% endif %}
 
   {%- comment -%} Low Stock Badge {%- endcomment -%}
   {% if variant.inventory_quantity > 0 and variant.inventory_quantity <= 5 %}
-    <span class="hb_badge-text__variant--option">Low Stock</span>
+    <span class="hb_badge-text__variant--option  badge-text">Low Stock</span>
   {% endif %}
 
 </div>
