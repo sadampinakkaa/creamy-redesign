@@ -2875,6 +2875,7 @@ span.price.price--highlight {
     
 }
 .product-item-meta__swatch-list {
+	margin-start-end: 0px !important;
 	margin-block-end: 10px !important;
 }
 .price-list.price-list--centered {
