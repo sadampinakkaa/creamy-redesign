@@ -2878,3 +2878,12 @@ span.price.price--highlight {
 .price-list.price-list--centered {
     font-size: 10px;
 }
+
+
+/* header */
+
+a.header__linklist-link.link--animated {
+    font-weight: 700;
+    font-family: inter, sans-serif;
+    font-size: 13px;
+}
