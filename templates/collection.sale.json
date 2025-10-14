@@ -20,6 +20,83 @@
         "section_class": "new-big-redesign-ab-test-b"
       }
     },
+    "rich_text_hJLKAz": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Talk about your brand",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "left",
+        "text_alignment": "left",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "custom_collections_WnBjtp": {
+      "type": "custom-collections",
+      "blocks": {
+        "category_y7kLQB": {
+          "type": "category",
+          "settings": {
+            "title": "Category Name",
+            "link": ""
+          }
+        },
+        "category_TVqRzq": {
+          "type": "category",
+          "settings": {
+            "title": "Category Name",
+            "link": ""
+          }
+        },
+        "category_X6nhaC": {
+          "type": "category",
+          "settings": {
+            "title": "Category Name",
+            "link": ""
+          }
+        },
+        "category_pMdKhX": {
+          "type": "category",
+          "settings": {
+            "title": "Category Name",
+            "link": ""
+          }
+        },
+        "category_CnD8Wm": {
+          "type": "category",
+          "settings": {
+            "title": "Category Name",
+            "link": ""
+          }
+        },
+        "category_VpRNfi": {
+          "type": "category",
+          "settings": {
+            "title": "Category Name",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_y7kLQB",
+        "category_TVqRzq",
+        "category_X6nhaC",
+        "category_pMdKhX",
+        "category_CnD8Wm",
+        "category_VpRNfi"
+      ],
+      "name": "custom-collection-list",
+      "settings": {}
+    },
     "main": {
       "type": "main-collection",
       "blocks": {
@@ -74,6 +151,8 @@
   },
   "order": [
     "bd_main_collection_ife77y",
+    "rich_text_hJLKAz",
+    "custom_collections_WnBjtp",
     "main",
     "metaobject_accordion_KUm9nq"
   ]
