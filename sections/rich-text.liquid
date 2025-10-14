@@ -10,6 +10,23 @@
   {%- assign blends_with_background = true -%}
 {%- endif -%}
 
+{%- style -%}
+ {%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+{%- endstyle -%}
+
+
 <style>
   #shopify-section-{{ section.id }} {
     {%- if section.settings.background == 'rgba(0,0,0,0)' -%}
@@ -47,7 +64,7 @@
   }
 </style>
 
-<section class="section {{ section.settings.section_class }} {% unless blends_with_background or is_boxed %}section--flush{% endunless %}">
+<section class="section {{ section.settings.section_class }} section-{{ section.id }}-padding {% unless blends_with_background or is_boxed %}section--flush{% endunless %}">
   <div {% if is_boxed %}class="container"{% endif %}>
     <div class="section__color-wrapper {% if is_boxed %}section__color-wrapper--boxed{% endif %}">
       <div class="{% unless is_boxed %}container{% endunless %} {% unless blends_with_background %}vertical-breather{% endunless %}">
@@ -227,6 +244,46 @@
       "id": "section_class",
       "label": "Section class"
     }
+    ,{
+  "type": "range",
+  "id": "padding_top",
+  "min": 0,
+  "max": 100,
+  "step": 4,
+  "unit": "px",
+  "label": "t:sections.all.padding.padding_top",
+  "default": 36
+},
+{
+  "type": "range",
+  "id": "padding_bottom",
+  "min": 0,
+  "max": 100,
+  "step": 4,
+  "unit": "px",
+  "label": "t:sections.all.padding.padding_bottom",
+  "default": 36
+},
+{
+  "type": "range",
+  "id": "padding_top_mobile",
+  "min": 0,
+  "max": 100,
+  "step": 4,
+  "unit": "px",
+  "label": "Padding top (mobile)",
+  "default": 28
+},
+{
+  "type": "range",
+  "id": "padding_bottom_mobile",
+  "min": 0,
+  "max": 100,
+  "step": 4,
+  "unit": "px",
+  "label": "Padding bottom (mobile)",
+  "default": 28
+}
   ],
   "presets": [
     {
