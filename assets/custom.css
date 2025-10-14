@@ -2870,10 +2870,10 @@ span.price.price--highlight {
 }
 
 .product-item__info {
-    padding: 16px;
-    text-align: left;
+    padding: 16px !important;
+    text-align: left !important;
     
 }
 .product-item-meta__swatch-list {
-	margin-block-end: 10px;
+	margin-block-end: 10px !important;
 }
