@@ -2829,3 +2829,6 @@ label.color-swatch__item {
     width: 16px;
     height: 16px;
 }
+.color-swatch__item:before, .color-swatch__item:after{
+	border:none;
+}
