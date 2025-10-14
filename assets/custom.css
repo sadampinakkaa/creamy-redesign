@@ -2825,3 +2825,7 @@ label.color-swatch__item {
 .product-item-meta__swatch-list {
 	gap:7px !important;
 }
+.color-swatch {
+    width: 16px;
+    height: 16px;
+}
