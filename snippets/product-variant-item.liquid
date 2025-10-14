@@ -242,7 +242,7 @@
               {%- if settings.currency_code_enabled -%}
                 {{- variant.price | money_with_currency -}}
               {%- else -%}
-                {{- variant.price | money -}}
+                {{- variant.price | money_with_currency -}}
               {%- endif -%}
             </span>
 
@@ -251,7 +251,7 @@
               {%- if settings.currency_code_enabled -%}
                 {{- variant.compare_at_price | money_with_currency -}}
               {%- else -%}
-                {{- variant.compare_at_price | money -}}
+                {{- variant.compare_at_price | money_with_currency -}}
               {%- endif -%}
             </span>
           {%- else -%}
@@ -261,7 +261,7 @@
               {%- if settings.currency_code_enabled -%}
                 {{- variant.price | money_with_currency -}}
               {%- else -%}
-                {{- variant.price | money -}}
+                {{- variant.price | money_with_currency -}}
               {%- endif -%}
             </span>
 
