@@ -2866,7 +2866,7 @@ span.price.price--highlight {
 	align-items:left;
 }
 .product-item__image-wrapper {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .product-item__info {
