@@ -66,6 +66,10 @@
         {{- next_media | image_url: width: next_media.width | image_tag: loading: 'lazy', sizes: sizes_attribute, widths: '200,300,400,500,600,700,800,900,1000,1100,1200', class: 'product-item__secondary-image' -}}
       {%- endif -%}
     </a>
+
+
+{% comment %} custom badge start {% endcomment %}
+
    <div class="hb_badge-text__collection--badge">
   {%- comment -%} Size and Color Option Badges {%- endcomment -%}
   {% if variant.metafields.custom.badge_text_size_option != blank %}
@@ -142,6 +146,8 @@
   {% endif %}
 
 </div>
+
+{% comment %} custom badge end {% endcomment %}
 
   </div>
   <div class="product-item__info {% if show_cta %}product-item__info--with-button{% endif %} {% if reduced_font_size %}text--small{% endif %}">
