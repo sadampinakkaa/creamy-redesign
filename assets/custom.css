@@ -2887,3 +2887,6 @@ a.header__linklist-link.link--animated {
     font-family: inter, sans-serif;
     font-size: 13px;
 }
+*p {
+	 font-family: inter, sans-serif !important;
+}
