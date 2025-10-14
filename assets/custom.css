@@ -2874,3 +2874,6 @@ span.price.price--highlight {
     text-align: left;
     
 }
+.product-item-meta__swatch-list {
+	margin-block-end: 10px;
+}
