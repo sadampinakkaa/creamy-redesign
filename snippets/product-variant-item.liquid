@@ -281,7 +281,7 @@
       </div>
       
       {% unless variant.metafields.custom.new_variant_not_for_sale and hide_ratings %}
-        <div class="dmeo-class-alternate loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div>
+        {% comment %} <div class="dmeo-class-alternate loox-rating" data-id="{{ product.id }}" data-rating="{{ product.metafields.loox.avg_rating }}" data-raters="{{ product.metafields.loox.num_reviews }}"></div> {% endcomment %}
       {% endunless %}
 
       
