@@ -11,6 +11,9 @@
   "sections": {
     "rich_text_8HBNny": {
       "type": "rich-text",
+      "custom_css": [
+        ".content-box.content-box--medium.content-box--text-left.content-box--left.text-container {margin: 0;}"
+      ],
       "settings": {
         "subheading": "",
         "title": "{{ collection.title }}",
