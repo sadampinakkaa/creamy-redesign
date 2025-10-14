@@ -2838,6 +2838,10 @@ label.color-swatch__item {
     content: none !important;
     display: none !important;
 }
+.color-swatch-list--mini .color-swatch__item{
+  border:none;
+
+}
 input.color-swatch__radio:checked + label.color-swatch__item {
     width: 16px !important;
     height: 16px !important;
