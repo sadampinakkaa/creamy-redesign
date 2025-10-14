@@ -2772,3 +2772,45 @@ body.new-big-redesign-ab-test .product--image-and-size-details .product--size-de
 }
 
 /* end grid */
+
+/* product card */
+
+
+span.hb_badge-text__variant--option.badge-text {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    gap: 5px;
+    padding: 6px 7px;
+    font-size: 10px;
+    border-radius: 2px;
+    font-weight: 700;
+    background: #2d2a26;
+    color: #fff;
+    height: fit-content;
+    letter-spacing: 0.05em;
+    border: none;
+    box-shadow: none;
+    letter-spacing: 0;
+}
+
+.badge-text svg.h-auto.w-3 {
+    width: 13px;
+    height: 10px;
+}
+
+.hb_badge-text__collection--badge.badge {
+    bottom: 3%;
+    left: 3%;
+}
+
+a.product-item-meta__title {
+    font-family: TSTARPRO Headline, sans-serif !important;
+    font-weight: 700 !important;
+    font-size:14px;
+}
+
+a.product-item-meta__title {
+    text-align:left;
+}
