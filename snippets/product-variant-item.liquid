@@ -125,9 +125,15 @@
     <span class="hb_badge-text__variant--option">New</span>
   {% endif %}
 
-  {%- comment -%} Custom Badge (Best Seller, Top, etc.) {%- endcomment -%}
+  {%- comment -%} Custom Badges (Split by |) {%- endcomment -%}
   {% if product.metafields.custom.badge != blank %}
-    <span class="hb_badge-text__variant--option">{{ product.metafields.custom.badge }}</span>
+    {% assign badges = product.metafields.custom.badge | split: '|' %}
+    {% for badge in badges %}
+      {% assign badge_trimmed = badge | strip %}
+      {% if badge_trimmed != blank %}
+        <span class="hb_badge-text__variant--option">{{ badge_trimmed }}</span>
+      {% endif %}
+    {% endfor %}
   {% endif %}
 
   {%- comment -%} Low Stock Badge {%- endcomment -%}
