@@ -490,7 +490,7 @@ image-with-text.image-with-text .container .image-with-text__content-wrapper h3.
 }
 .hb_badge-text__collection--badge {
   position: absolute;
-  top: 0;
+  /* top: 0; */
   left: 0;
   width: 100%;
   max-width: fit-content;
