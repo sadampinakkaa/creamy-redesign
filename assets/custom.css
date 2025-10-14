@@ -2865,3 +2865,12 @@ span.price.price--highlight {
 .product-item__info {
 	align-items:left;
 }
+.product-item__image-wrapper {
+    margin: 0;
+}
+
+.product-item__info {
+    padding: 16px;
+    text-align: left;
+    
+}
