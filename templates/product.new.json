@@ -30,16 +30,6 @@
             "modal_footer_button_text": "Wähle jetzt deine Größe"
           }
         },
-        "2665d360-254c-4372-80a1-44abf22ada9e": {
-          "type": "couponCode",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/tag.webp",
-            "text": "<p>🚨 <strong>Black Week Flash Sale! Nur für kurze Zeit! 🚨<br/></strong>Lege 3 Bodysuits in den Warenkorb und erhalte 1 davon <strong>GRATIS</strong>! Mit dem Code:<strong> Black3</strong></p>",
-            "message": "Super, Du hast den Rabattcode kopiert!",
-            "coupon": "creamyfabrics"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -48,28 +38,6 @@
             "color_mode": "color",
             "size_chart_page": "size-chart"
           }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "disabled": true,
-          "settings": {}
-        },
-        "liquid_EU3666": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<font color = green class=\"new-big-redesign-ab-test-a\"> Lagerumzug: aktuelle Lieferzeit 5–10 Tage </font>"
-          }
-        },
-        "f416a89a-8dc7-45a6-8ece-4c559bee211a": {
-          "type": "text",
-          "settings": {
-            "text": "<ol><li>Wählen <strong>eine Nummer kleiner</strong> für eine optimale Passform.</li></ol>"
-          }
-        },
-        "sizekick_creamy_fabrics_sizekick_hGnEWJ": {
-          "type": "shopify://apps/sizekick-creamy-fabrics/blocks/sizekick/481874b8-e887-4a47-9c5a-171dab48c68b",
-          "disabled": true,
-          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -87,102 +55,13 @@
             "icon_svg_3": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 16 16\" fill=\"none\">\n  <g clip-path=\"url(#clip0_1131_885)\">\n    <path d=\"M7.99938 11.8182L11.4194 13.9213C11.5081 13.9752 11.6108 14.0015 11.7145 13.997C11.8182 13.9925 11.9183 13.9574 12.002 13.8961C12.0858 13.8347 12.1495 13.7499 12.185 13.6524C12.2206 13.5549 12.2265 13.449 12.2019 13.3482L11.2719 9.42379L14.3156 6.79879C14.3932 6.73064 14.4492 6.64127 14.4766 6.54169C14.504 6.44211 14.5016 6.3367 14.4697 6.23845C14.4379 6.14021 14.378 6.05344 14.2974 5.98885C14.2168 5.92427 14.1191 5.8847 14.0163 5.87504L10.0219 5.55004L8.48313 1.82504C8.4439 1.72893 8.37694 1.6467 8.29078 1.58881C8.20462 1.53092 8.10318 1.5 7.99938 1.5C7.89558 1.5 7.79413 1.53092 7.70797 1.58881C7.62182 1.6467 7.55485 1.72893 7.51563 1.82504L5.97688 5.55004L1.9825 5.87504C1.87898 5.88413 1.78043 5.92352 1.69917 5.98829C1.61791 6.05307 1.55754 6.14035 1.52559 6.23924C1.49365 6.33813 1.49156 6.44424 1.51958 6.54431C1.5476 6.64439 1.60448 6.73398 1.68313 6.80191L4.72688 9.42691L3.79688 13.3482C3.77229 13.449 3.77815 13.5549 3.81372 13.6524C3.8493 13.7499 3.91298 13.8347 3.99672 13.8961C4.08047 13.9574 4.18052 13.9925 4.28422 13.997C4.38793 14.0015 4.49064 13.9752 4.57938 13.9213L7.99938 11.8182Z\" stroke=\"#12100F\" stroke-width=\"0.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  </g>\n  <defs>\n    <clippath id=\"clip0_1131_885\">\n      <rect width=\"16\" height=\"16\" fill=\"white\"></rect>\n    </clippath>\n  </defs>\n</svg>",
             "text_3": "Zufriedenheitsgarantie"
           }
-        },
-        "accordion_list_8HCyVD": {
-          "type": "accordion_list",
-          "settings": {
-            "heading_1": "Kompressionsgrad",
-            "description_1": "",
-            "product_details_metafield": true,
-            "heading_2": "Beschreibung & Passform",
-            "description_2": "",
-            "passform_metafield": true,
-            "heading_3": "Material & Pflege",
-            "description_3": "",
-            "versand_metafield": true
-          }
-        },
-        "8cb4b70e-f153-49fb-93d4-b9898efd6331": {
-          "type": "CustomerTestimonial",
-          "disabled": true,
-          "settings": {
-            "image1": "shopify://shop_images/Skimmykommentarbeate.webp",
-            "image2": "shopify://shop_images/Bildschirm_foto_2023-11-14_um_10.52.50_28eca001-721a-4490-9774-2e5480909a04.png",
-            "text": "„Melanie S. und +51.238 andere lieben unseren Shapewear"
-          }
-        },
-        "image_nBtEGf": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/image_76_aaa.png",
-            "image_alignment": "center",
-            "image_width": 500
-          }
-        },
-        "trust_custom_icons_Ut3MHH": {
-          "type": "TrustCustomIcons",
-          "settings": {
-            "image1": "shopify://shop_images/image_73.png",
-            "html": "",
-            "text1": "Kostenloser Versand & Umtausch",
-            "image2": "shopify://shop_images/image_76.png",
-            "html2": "",
-            "text2": "Einfache Rücksendung"
-          }
-        },
-        "trust_custom_icons_KF4wt9": {
-          "type": "TrustCustomIcons",
-          "settings": {
-            "image1": "shopify://shop_images/image_74_1.png",
-            "html": "",
-            "text1": "Sichere Bestellung",
-            "image2": "shopify://shop_images/image_72.png",
-            "html2": "",
-            "text2": "100% Zufriedenheitsgarantie"
-          }
-        },
-        "81fd678f-3dd0-47e8-b292-b98a82f57d10": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/icons.webp",
-            "image_alignment": "center",
-            "image_width": 500
-          }
-        },
-        "accordion_list_ne9wcV": {
-          "type": "accordion_list",
-          "settings": {
-            "heading_1": "Support Level",
-            "description_1": "<p>jkalfdjaskl;</p>",
-            "product_details_metafield": false,
-            "heading_2": "Details",
-            "description_2": "<p>ajfakl;sd</p>",
-            "passform_metafield": false,
-            "heading_3": "Fit and Fabric",
-            "description_3": "<p>jkhjkhkj</p>",
-            "versand_metafield": false
-          }
         }
       },
       "block_order": [
         "info_display_nwHcfW",
         "image_size_details_TAL7JP",
-        "2665d360-254c-4372-80a1-44abf22ada9e",
         "variant_picker",
-        "quantity_selector",
-        "liquid_EU3666",
-        "f416a89a-8dc7-45a6-8ece-4c559bee211a",
-        "sizekick_creamy_fabrics_sizekick_hGnEWJ",
-        "buy_buttons",
-        "accordion_list_8HCyVD",
-        "8cb4b70e-f153-49fb-93d4-b9898efd6331",
-        "image_nBtEGf",
-        "trust_custom_icons_Ut3MHH",
-        "trust_custom_icons_KF4wt9",
-        "81fd678f-3dd0-47e8-b292-b98a82f57d10",
-        "accordion_list_ne9wcV"
+        "buy_buttons"
       ],
       "settings": {
         "show_vendor": false,
@@ -499,7 +378,7 @@
         "category_Geky9F"
       ],
       "custom_css": [
-        "p{font-family:TSTARPRO Headline;}"
+        "p {font-family: TSTARPRO Headline;}"
       ],
       "name": "custom collection list",
       "settings": {
