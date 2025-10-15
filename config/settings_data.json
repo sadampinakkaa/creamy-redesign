@@ -320,9 +320,9 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".container {padding: 0 20px;}",
+      ".container {padding-left:30px; padding-right:20px;}",
       "p {color: #2d2a26 !important;}",
-      "body{overflow-x: hidden;}"
+      "body {overflow-x: hidden;}"
     ]
   }
 }
