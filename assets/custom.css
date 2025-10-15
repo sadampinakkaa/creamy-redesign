@@ -2889,3 +2889,6 @@ a.header__linklist-link.link--animated {
 	    /* min-width: max-content;
     width: max-content; */
 }
+span.header__logo {
+    display: none;
+}
