@@ -2886,6 +2886,6 @@ a.header__linklist-link.link--animated {
 }
 
 .mega-menu {
-	    min-width: max-content;
-    width: max-content;
+	    /* min-width: max-content;
+    width: max-content; */
 }
