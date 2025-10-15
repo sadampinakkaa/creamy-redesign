@@ -2884,3 +2884,8 @@ a.header__linklist-link.link--animated {
 *p {
 	 font-family: inter, sans-serif !important;
 }
+
+.mega-menu {
+	    min-width: max-content;
+    width: max-content;
+}
