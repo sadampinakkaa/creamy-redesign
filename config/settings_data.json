@@ -320,7 +320,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".container {}"
+      ".container {padding: 0 20px;}",
+      "p{color: #2d2a26 !important;}"
     ]
   }
 }
