@@ -325,6 +325,7 @@
         "item_Xky7cq",
         "item_NLYGKE"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "stack_items": false,
