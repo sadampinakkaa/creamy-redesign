@@ -51,9 +51,9 @@
           "type": "mega_menu",
           "settings": {
             "menu_item": "Underwear",
-            "images_position": "left",
+            "images_position": "right",
             "image_1": "shopify://shop_images/Training.avif",
-            "image_1_heading": "",
+            "image_1_heading": "Best Seller",
             "image_1_text": "",
             "image_1_link": "",
             "image_2_heading": "",
