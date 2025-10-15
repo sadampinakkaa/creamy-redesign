@@ -35,6 +35,22 @@
         "padding_bottom_mobile": 28
       }
     },
+    "custom_liquid_CcWPqg": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "a {margin: 0;}"
+      ],
+      "name": "Custom Liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<nav class=\"simple-breadcrumbs\" aria-label=\"breadcrumbs\">\n  <a href=\"/\" class=\"breadcrumb-link\">Home</a> /\n  <span class=\"breadcrumb-current\">{{ collection.title | capitalize }}</span>\n</nav>\n<style>\n.simple-breadcrumbs {\n  font-size: 12px;\n  color: #2d2a26;\n  margin-bottom: 15px;\npadding:0 24px;\n}\n.simple-breadcrumbs a.breadcrumb-link {\n  text-decoration: none; \n  color: #2d2a26;\ntext-transform:capitalize;\n}\n.simple-breadcrumbs a.breadcrumb-link:hover {\n  text-decoration: underline; \n}\n.breadcrumb-current {\n  color:#2d2a26;\n}\n@media screen and (max-width: 750px) {\n.simple-breadcrumbs {\npadding:0 20px;\n}\n}\n</style>",
+        "add_vertical_spacing": false,
+        "background_type": "boxed",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
+    },
     "custom_collections_Kf7rbM": {
       "type": "custom-collections",
       "blocks": {
@@ -125,6 +141,7 @@
   },
   "order": [
     "rich_text_8HBNny",
+    "custom_liquid_CcWPqg",
     "custom_collections_Kf7rbM",
     "main",
     "metaobject_accordion_KUm9nq"
