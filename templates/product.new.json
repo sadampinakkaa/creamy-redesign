@@ -150,6 +150,20 @@
             "image_alignment": "center",
             "image_width": 500
           }
+        },
+        "accordion_list_ne9wcV": {
+          "type": "accordion_list",
+          "settings": {
+            "heading_1": "Support Level",
+            "description_1": "<p>jkalfdjaskl;</p>",
+            "product_details_metafield": false,
+            "heading_2": "Details",
+            "description_2": "<p>ajfakl;sd</p>",
+            "passform_metafield": false,
+            "heading_3": "Fit and Fabric",
+            "description_3": "<p>jkhjkhkj</p>",
+            "versand_metafield": false
+          }
         }
       },
       "block_order": [
@@ -167,7 +181,8 @@
         "image_nBtEGf",
         "trust_custom_icons_Ut3MHH",
         "trust_custom_icons_KF4wt9",
-        "81fd678f-3dd0-47e8-b292-b98a82f57d10"
+        "81fd678f-3dd0-47e8-b292-b98a82f57d10",
+        "accordion_list_ne9wcV"
       ],
       "settings": {
         "show_vendor": false,
@@ -198,6 +213,301 @@
       ],
       "settings": {
         "section_class": "new-big-redesign-ab-test-a"
+      }
+    },
+    "featured_collections_LYnNjW": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_NCYJqg": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "label": "",
+            "button_text": "",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_NCYJqg"
+      ],
+      "disabled": true,
+      "name": "Featured collections",
+      "settings": {
+        "subheading": "Your title",
+        "title": "Collection",
+        "content": "",
+        "hide_ratings": false,
+        "products_count": 8,
+        "products_per_row": 4,
+        "stack_products": true,
+        "show_cta": false,
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
+    },
+    "rich_text_K6mLJ7": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "Similar Styles",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": "",
+        "padding_top": 0,
+        "padding_bottom": 16,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 16
+      }
+    },
+    "custom_collection_list_EGMhMc": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "category_xeRUbd": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_aVJnHr": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_YrTYt9": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_a3nU9m": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_f3QGgD": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_RyY7fB": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_xeRUbd",
+        "category_aVJnHr",
+        "category_YrTYt9",
+        "category_a3nU9m",
+        "category_f3QGgD",
+        "category_RyY7fB"
+      ],
+      "custom_css": [
+        "p {font-family: TSTAR Headline;}"
+      ],
+      "name": "custom collection list",
+      "settings": {
+        "collections_to_show": 6,
+        "collections_to_show_mobile": 2,
+        "container": true,
+        "enable_mobile_slider": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0
+      }
+    },
+    "rich_text_eWGtL7": {
+      "type": "rich-text",
+      "custom_css": [
+        "h3 {font-size: 20px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "subheading": "",
+        "title": "More in this color",
+        "content": "",
+        "button_text": "",
+        "button_link": "",
+        "background_type": "full_width",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": "",
+        "padding_top": 0,
+        "padding_bottom": 16,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 16
+      }
+    },
+    "custom_collection_list_F4xkKc": {
+      "type": "custom-collection-list",
+      "blocks": {
+        "category_DnjDXY": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_kJDrYT": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_6pMjWA": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_KCRY4N": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_dpjAgQ": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        },
+        "category_Geky9F": {
+          "type": "category",
+          "settings": {
+            "overlay": false,
+            "title": "Category Name",
+            "title_font_size": 16,
+            "sub-text": "",
+            "subtext_font_size": 16,
+            "button": "",
+            "link": "",
+            "color": ""
+          }
+        }
+      },
+      "block_order": [
+        "category_DnjDXY",
+        "category_kJDrYT",
+        "category_6pMjWA",
+        "category_KCRY4N",
+        "category_dpjAgQ",
+        "category_Geky9F"
+      ],
+      "name": "custom collection list",
+      "settings": {
+        "collections_to_show": 6,
+        "collections_to_show_mobile": 2,
+        "container": true,
+        "enable_mobile_slider": false,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "mobile_padding_top": 0,
+        "mobile_padding_bottom": 0
       }
     },
     "130e7648-bb2e-4748-87c7-b795a7e27407": {
@@ -254,6 +564,7 @@
         "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-5",
         "template--20182448079195__130e7648-bb2e-4748-87c7-b795a7e27407-logo-6"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "subheading": "Der Bauch wird flacher, der Po runder und die Brüste sind perfekt geformt",
@@ -355,6 +666,7 @@
       "block_order": [
         "template--20182448079195__cd437615-44a9-4e8d-9bcf-30f21823c1dc-item-1"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "background_type": "full_width",
@@ -388,6 +700,7 @@
       "block_order": [
         "template--20182448079195__678dd7a1-5b46-4541-9948-452a9faf353e-item-1"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "background_type": "full_width",
@@ -421,6 +734,7 @@
       "block_order": [
         "template--20182448079195__577f079b-3cb0-4127-aa35-f91522e34266-item-1"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "background_type": "full_width",
@@ -552,6 +866,11 @@
   "order": [
     "main",
     "product-content",
+    "featured_collections_LYnNjW",
+    "rich_text_K6mLJ7",
+    "custom_collection_list_EGMhMc",
+    "rich_text_eWGtL7",
+    "custom_collection_list_F4xkKc",
     "130e7648-bb2e-4748-87c7-b795a7e27407",
     "bd_image_feature_grid_RqHXDQ",
     "cd437615-44a9-4e8d-9bcf-30f21823c1dc",
