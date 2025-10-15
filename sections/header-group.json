@@ -78,9 +78,7 @@
       "block_order": [
         "mega_menu_yEpjBn"
       ],
-      "custom_css": [
-        "/* Make 'Summer Outlet' menu item red */a[href*=\"summer-outlet\"] {color: red !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "enable_sticky_header": true,
         "logo": "shopify://shop_images/Design_ohne_Titel_-_2025-04-10T182040.810.png",
@@ -91,7 +89,7 @@
         "mobile_logo_max_width_b": 100,
         "navigation_menu": "test-men-all-underwear-eren",
         "sidebar_navigation_menu": "",
-        "header_layout": "logo_left_navigation_center",
+        "header_layout": "logo_center_search_open",
         "show_icons": true,
         "reduce_desktop_padding": true,
         "show_locale_selector": false,
