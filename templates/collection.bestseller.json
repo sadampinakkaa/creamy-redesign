@@ -47,6 +47,9 @@
     },
     "rich_text_XBwUba": {
       "type": "rich-text",
+      "custom_css": [
+        ".content-box.content-box--medium.content-box--text-left.content-box--left.text-container {margin: 0;}"
+      ],
       "settings": {
         "subheading": "",
         "title": "BESTSELLER",
@@ -55,13 +58,17 @@
         "button_link": "",
         "background_type": "full_width",
         "text_width": "small",
-        "text_position": "center",
-        "text_alignment": "center",
+        "text_position": "left",
+        "text_alignment": "left",
         "background": "rgba(0,0,0,0)",
         "text_color": "rgba(0,0,0,0)",
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)",
-        "section_class": "new-big-redesign-ab-test-a"
+        "section_class": "new-big-redesign-ab-test-a",
+        "padding_top": 28,
+        "padding_bottom": 20,
+        "padding_top_mobile": 28,
+        "padding_bottom_mobile": 28
       }
     },
     "main": {
@@ -81,11 +88,25 @@
         "promotion_height": "small",
         "section_class": "new-big-redesign-ab-test-a"
       }
+    },
+    "custom_liquid_LN7XfB": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "<nav class=\"simple-breadcrumbs\" aria-label=\"breadcrumbs\">\n  <a href=\"/\" class=\"breadcrumb-link\">Home</a> /\n  <span class=\"breadcrumb-current\">{{ collection.title | capitalize }}</span>\n</nav>\n<style>\n.simple-breadcrumbs {\n  font-size: 12px;\n  color: #2d2a26;\n  margin-bottom: 15px;\npadding:0 24px;\n}\n.simple-breadcrumbs a.breadcrumb-link {\n  text-decoration: none; \n  color: #2d2a26;\ntext-transform:capitalize;\n}\n.simple-breadcrumbs a.breadcrumb-link:hover {\n  text-decoration: underline; \n}\n.breadcrumb-current {\n  color:#2d2a26;\n}\n@media screen and (max-width: 750px) {\n.simple-breadcrumbs {\npadding:0 20px;\n}\n}\n</style>",
+        "add_vertical_spacing": true,
+        "background_type": "full_width",
+        "background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)"
+      }
     }
   },
   "order": [
     "slideshow_Ghz8nK",
     "rich_text_XBwUba",
+    "custom_liquid_LN7XfB",
     "main"
   ]
 }
