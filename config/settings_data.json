@@ -321,7 +321,8 @@
   "platform_customizations": {
     "custom_css": [
       ".container {padding: 0 20px;}",
-      "p{color: #2d2a26 !important;}"
+      "p {color: #2d2a26 !important;}",
+      "body{overflow-x: hidden;}"
     ]
   }
 }
