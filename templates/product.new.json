@@ -367,7 +367,7 @@
         "category_RyY7fB"
       ],
       "custom_css": [
-        "p {font-family: TSTAR Headline;}"
+        "p {font-family: TSTARPRO Headline;}"
       ],
       "name": "custom collection list",
       "settings": {
@@ -497,6 +497,9 @@
         "category_KCRY4N",
         "category_dpjAgQ",
         "category_Geky9F"
+      ],
+      "custom_css": [
+        "p{font-family:TSTARPRO Headline;}"
       ],
       "name": "custom collection list",
       "settings": {
