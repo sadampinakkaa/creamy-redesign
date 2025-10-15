@@ -17,7 +17,7 @@
       "settings": {
         "subheading": "",
         "title": "{{ collection.title }}",
-        "content": "<p>Entdecke Creamy Fabrics Slips, Tangas, Hipster Pants und Spitzenhöschen – stilvoll, bequem und perfekt für jede Figur.</p>{{ collection.description }}",
+        "content": "",
         "button_text": "",
         "button_link": "",
         "background_type": "full_width",
