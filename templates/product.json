@@ -43,14 +43,14 @@
           "type": "accordion_list",
           "settings": {
             "heading_1": "Kompressionsgrad",
-            "description_1": "",
-            "product_details_metafield": true,
+            "description_1": "<p>hjgjj</p>",
+            "product_details_metafield": false,
             "heading_2": "Beschreibung & Passform",
-            "description_2": "",
-            "passform_metafield": true,
+            "description_2": "<p>hvh</p>",
+            "passform_metafield": false,
             "heading_3": "Material & Pflege",
-            "description_3": "",
-            "versand_metafield": true
+            "description_3": "<p>hhch</p>",
+            "versand_metafield": false
           }
         }
       },
