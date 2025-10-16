@@ -2910,3 +2910,12 @@ img.header__logo-image.new-big-redesign-ab-test-a {
   max-height: 64px;
   max-width: 120px;
 }
+
+
+/* product page */
+
+product-media.product__media.new-big-redesign-ab-test-a.became-visible {
+    margin: 0;
+    padding: 0;
+    width: 45.5%;
+}
