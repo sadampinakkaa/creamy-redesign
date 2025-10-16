@@ -14,6 +14,7 @@
       "blocks": {
         "text_cBdjmQ": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p><strong>{{ product.metafields.custom.product_subtitle.value }}</strong></p>"
           }
