@@ -2902,3 +2902,7 @@ a.container.header__logo-link.custom-logo img.header__logo-image.new-big-redesig
     left: 0;
 	display:block !important;
 } */
+ a.container.header__logo-link.custom-logo {
+    position: absolute;
+    left: 0;
+}
