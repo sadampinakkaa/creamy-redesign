@@ -2892,3 +2892,12 @@ a.header__linklist-link.link--animated {
 span.header__logo {
     display: none;
 }
+a.container.header__logo-link {
+    position: absolute;
+    left: 0;
+}
+
+.announcement-bar__message.text--xsmall {
+    font-weight: 500;
+    font-size: 12px;
+}
