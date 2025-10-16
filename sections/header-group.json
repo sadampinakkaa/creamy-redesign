@@ -31,9 +31,9 @@
       ],
       "settings": {
         "announcement_bar_position": "non_sticky",
-        "logo": "shopify://shop_images/cf_logo_neu_schwarz.png",
-        "logo_max_width": 55,
-        "mobile_logo_max_width": 50,
+        "logo": "shopify://shop_images/Design_ohne_Titel_-_2025-04-10T181944.738.png",
+        "logo_max_width": 120,
+        "mobile_logo_max_width": 120,
         "logo_b": "shopify://shop_images/creamy_fabrics_new_logo_for_ab_test.webp",
         "logo_max_width_b": 120,
         "mobile_logo_max_width_b": 100,
