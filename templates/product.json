@@ -12,6 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "text_cBdjmQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>{{ product.metafields.custom.product_subtitle.value }}</strong></p>"
+          }
+        },
         "info_display_nwHcfW": {
           "type": "info_display",
           "settings": {
@@ -55,6 +61,7 @@
         }
       },
       "block_order": [
+        "text_cBdjmQ",
         "info_display_nwHcfW",
         "image_size_details_TAL7JP",
         "variant_picker",
