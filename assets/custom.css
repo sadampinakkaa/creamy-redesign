@@ -2885,24 +2885,23 @@ a.header__linklist-link.link--animated {
 	 font-family: inter, sans-serif !important;
 }
 
-span.header__logo {
-    display: none;
-}
-
-
 .announcement-bar__message.text--xsmall {
     font-weight: 500;
     font-size: 12px;
 }
-/* img.header__logo-image.new-big-redesign-ab-test-a {
-    display: none;
-}
-a.container.header__logo-link.custom-logo img.header__logo-image.new-big-redesign-ab-test-a {
-    position: absolute;
-    left: 0;
-	display:block !important;
-} */
+
  a.container.header__logo-link.custom-logo {
     position: absolute;
     left: 0;
+}
+img.header__logo-image.new-big-redesign-ab-test-a {
+    display: none;
+}
+
+.custom-logo img.header__logo-image.new-big-redesign-ab-test-a {
+    display: block;
+}
+
+h1.header__logo {
+    display: none;
 }
