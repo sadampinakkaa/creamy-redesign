@@ -2904,5 +2904,5 @@ img.header__logo-image.new-big-redesign-ab-test-a {
 a.container.header__logo-link.custom-logo {
     position: absolute;
     left: 0;
-	display:block;
+	display:block !important;
 }
