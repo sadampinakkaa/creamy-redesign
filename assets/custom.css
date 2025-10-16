@@ -2960,3 +2960,8 @@ product-meta.product-meta {
     margin-bottom: 23px;
 	border:none;
 }
+.color-swatch__item::before,
+.color-swatch__item::after {
+  content: none !important;
+  border: none !important;
+}
