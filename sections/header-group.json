@@ -29,6 +29,9 @@
       "block_order": [
         "cb7914cb-6111-4475-9bec-c27329aabdcd"
       ],
+      "custom_css": [
+        "img.header__logo-image.new-big-redesign-ab-test-a {max-height: 64px; max-width: 145px;}"
+      ],
       "settings": {
         "announcement_bar_position": "non_sticky",
         "logo": "shopify://shop_images/Design_ohne_Titel_-_2025-04-10T181944.738.png",
