@@ -2919,3 +2919,7 @@ product-media.product__media.new-big-redesign-ab-test-a.became-visible {
     padding: 0;
     width: 45.5%;
 }
+.product.product--thumbnails-bottom {
+    margin: 0;
+    justify-content: start;
+}
