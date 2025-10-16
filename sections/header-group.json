@@ -94,7 +94,7 @@
         "mobile_logo_max_width_b": 100,
         "navigation_menu": "test-men-all-underwear-eren",
         "sidebar_navigation_menu": "",
-        "header_layout": "logo_center_search_open",
+        "header_layout": "logo_left_navigation_inline",
         "show_icons": true,
         "reduce_desktop_padding": true,
         "show_locale_selector": false,
