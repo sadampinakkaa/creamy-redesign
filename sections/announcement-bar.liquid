@@ -73,7 +73,7 @@
           {% render 'icon' with 'nav-arrow-left-small', direction_aware: true %}
         </button>
       {%- endif -%}
-        <a class="header__logo-link" href="{{ routes.root_url }}">
+        <a class="container header__logo-link" href="{{ routes.root_url }}">
           {%- if section.settings.logo != blank -%}
             {%- capture logo_size -%}{{ section.settings.logo_max_width | at_least: section.settings.mobile_logo_max_width | times: 2 | append: 'x' }}{%- endcapture -%}
             {%- capture logo_size_b -%}{{ section.settings.logo_max_width_b | at_least: section.settings.mobile_logo_max_width_b | times: 2 | append: 'x' }}{%- endcapture -%}
