@@ -2923,3 +2923,35 @@ product-media.product__media.new-big-redesign-ab-test-a.became-visible {
     margin: 0;
     justify-content: start;
 }
+.product__info {
+    padding: 24px 0 0 24px;
+}
+
+.product__info_subtitle {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+h1.product-meta__title.heading.h3 {
+    font-size: 24px;
+    margin: 0 !important;
+}
+
+font-size {}
+
+.price-list {
+    font-size: 16px !important;
+}
+
+span.price.price--highlight.price--large {
+    font-size: 16px !important;
+}
+
+span.transcy-money {
+    font-size: 16px;
+    color: #2d262a;
+}
+
+.loox-rating-content.new-big-redesign-ab-test-a {
+    display: none;
+}
