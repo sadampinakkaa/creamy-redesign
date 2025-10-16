@@ -31,6 +31,11 @@
       ],
       "settings": {
         "announcement_bar_position": "non_sticky",
+        "logo": "shopify://shop_images/cf_logo_neu_schwarz.png",
+        "logo_max_width": 65,
+        "mobile_logo_max_width": 65,
+        "logo_max_width_b": 140,
+        "mobile_logo_max_width_b": 100,
         "announcement_text_size": "small",
         "autoplay": true,
         "cycle_speed": 5,
