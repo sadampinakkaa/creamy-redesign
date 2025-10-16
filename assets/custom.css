@@ -2906,3 +2906,7 @@ img.header__logo-image.new-big-redesign-ab-test-a {
 h1.header__logo {
     display: none;
 }
+img.header__logo-image.new-big-redesign-ab-test-a {
+  max-height: 64px;
+  max-width: 120px;
+}
