@@ -2901,7 +2901,7 @@ span.header__logo {
 img.header__logo-image.new-big-redesign-ab-test-a {
     display: none;
 }
-a.container.header__logo-link {
+a.container.header__logo-link.custom-logo {
     position: absolute;
     left: 0;
 	display:block;
