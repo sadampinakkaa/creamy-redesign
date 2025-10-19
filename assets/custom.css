@@ -2999,7 +2999,7 @@ span.zerosense_text--main {
 .color-swatch__item:before,
 .color-swatch__item:after {
   content: "";
-  border: 2px solid rgb(var(--section-background, var(--background)));
+  border: none;
   pointer-events: none;
   border-radius: inherit;
   position: absolute;
