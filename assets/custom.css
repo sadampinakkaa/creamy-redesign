@@ -2854,6 +2854,9 @@ body.new-big-redesign-ab-test .product--image-and-size-details .product--size-de
   font-size: 10px;
   text-align: left;
 }
+.product-item  span.transcy-money {
+    FONT-SIZE: 10PX;
+}
 
 .product-item .price-list.price-list--centered {
   justify-content: left !important;
