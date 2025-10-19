@@ -2991,7 +2991,7 @@ span.zerosense_text--main {
     grid-template-columns: repeat(auto-fit, 24px);
 }
 .color-swatch__item {
-  border-radius: 2px !important;
+ 
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #333;
   position: relative;
 }
@@ -3003,5 +3003,5 @@ span.zerosense_text--main {
   pointer-events: none;
   border-radius: inherit;
   position: absolute;
-  inset: 0; /* Shorthand for top, right, bottom, left: 0 */
+  inset: 0;
 }
