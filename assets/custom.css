@@ -2990,7 +2990,9 @@ span.zerosense_text--main {
 .product__info .color-swatch-list {
     grid-template-columns: repeat(auto-fit, 24px);
 }
-
+.color-swatch__item{
+	border:none;
+}
 
 .color-swatch__item:before,
 .color-swatch__item:after {
