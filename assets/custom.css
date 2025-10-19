@@ -2938,6 +2938,8 @@ product-media.product__media.new-big-redesign-ab-test-a.became-visible {
 h1.product-meta__title.heading.h3 {
     font-size: 24px;
     margin: 0 !important;
+	padding-bottom: 10px;
+
 }
 .price-list {
     font-size: 16px !important;
