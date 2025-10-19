@@ -323,6 +323,7 @@
         "item_Xkafgh",
         "item_7HidAU"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": true,
         "stack_items": true,
@@ -364,6 +365,7 @@
       "block_order": [
         "template--19289149505869__52a1b9a7-22a8-445a-ae75-906d91673c19-item-1"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "background_type": "full_width",
@@ -396,6 +398,7 @@
       "block_order": [
         "template--19289149505869__f10d3109-6f91-45bd-bd62-98ec24098da5-item-1"
       ],
+      "disabled": true,
       "settings": {
         "reveal_on_scroll": false,
         "background_type": "full_width",
@@ -599,6 +602,7 @@
       "block_order": [
         "5be28bbb-c648-4cbb-a120-1f5b6b19a286"
       ],
+      "disabled": true,
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
@@ -622,6 +626,7 @@
       "block_order": [
         "loox_reviews_loox_dynamic_section_4dqy9L"
       ],
+      "disabled": true,
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
@@ -642,6 +647,7 @@
       "block_order": [
         "kiwi_size_chart_recommender_kiwi_sizing_Pahfiy"
       ],
+      "disabled": true,
       "settings": {
         "include_horizontal_margins": true,
         "include_vertical_margins": true
