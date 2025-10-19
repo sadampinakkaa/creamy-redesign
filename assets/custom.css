@@ -2990,3 +2990,18 @@ span.zerosense_text--main {
 .product__info .color-swatch-list {
     grid-template-columns: repeat(auto-fit, 24px);
 }
+.color-swatch__item {
+  border-radius: 2px !important;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #333;
+  position: relative;
+}
+
+.color-swatch__item:before,
+.color-swatch__item:after {
+  content: "";
+  border: 2px solid rgb(var(--section-background, var(--background)));
+  pointer-events: none;
+  border-radius: inherit;
+  position: absolute;
+  inset: 0; /* Shorthand for top, right, bottom, left: 0 */
+}
