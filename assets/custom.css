@@ -2973,3 +2973,20 @@ product-meta.product-meta {
 span.zerosense_text--main {
     display: none;
 }
+.product__info .color-swatch.hb_color-swatch {
+    width: 24px;
+    height: 24px;
+}
+
+.product__info a.color-swatch__item {
+    width: 24px;
+    height: 24px;
+}
+
+.product__info label.color-swatch__item {
+    width: 24px;
+    height: 24px;
+}
+.product__info .color-swatch-list {
+    grid-template-columns: repeat(auto-fit, 24px);
+}
