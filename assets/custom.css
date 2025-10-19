@@ -2989,10 +2989,23 @@ span.zerosense_text--main {
 .product__info .color-swatch__radio:checked + .color-swatch__item {
   box-shadow: 0 0 0 1.5px #fff, 0 0 0 2.5px #333;
 }
+
+.product__info button#AddToCart {
+    max-width: 321px;
+    max-height: 51px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.product__info a.product-form__add-button.button.button--primary.button--full.klaviyo-bis-trigger {
+    font-weight: 700;
+}
+
 @media screen and (min-width: 990px) {
      product-media.product__media.new-big-redesign-ab-test-a.became-visible {
     margin: 0;
     padding: 0;
     width: 45.5%;
 }
+
 }
