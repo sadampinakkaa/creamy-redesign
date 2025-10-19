@@ -2998,5 +2998,8 @@ span.zerosense_text--main {
 .color-swatch__item:after {
   
   border: none !important;
+ 
+}
+.color-swatch__radio:checked + .color-swatch__item {
   box-shadow: 0 0 0 1px #fff, 0 0 0 2px #333;
 }
