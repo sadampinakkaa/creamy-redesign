@@ -2917,11 +2917,7 @@ img.header__logo-image.new-big-redesign-ab-test-a {
 
 /* product page */
 
-product-media.product__media.new-big-redesign-ab-test-a.became-visible {
-    margin: 0;
-    padding: 0;
-    width: 45.5%;
-}
+
 .product.product--thumbnails-bottom {
     margin: 0;
     justify-content: start;
@@ -2992,4 +2988,11 @@ span.zerosense_text--main {
 }
 .product__info .color-swatch__radio:checked + .color-swatch__item {
   box-shadow: 0 0 0 1.5px #fff, 0 0 0 2.5px #333;
+}
+@media screen and (min-width: 990px) {
+     product-media.product__media.new-big-redesign-ab-test-a.became-visible {
+    margin: 0;
+    padding: 0;
+    width: 45.5%;
+}
 }
