@@ -2991,5 +2991,5 @@ span.zerosense_text--main {
   border: none !important;
 }
 .product__info .color-swatch__radio:checked + .color-swatch__item {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #333;
+  box-shadow: 0 0 0 1.5px #fff, 0 0 0 2.5px #333;
 }
