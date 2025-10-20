@@ -3062,7 +3062,7 @@ span.product_support_level {
 @media screen and (min-width: 990px) {
 
     .product--thumbnails-bottom .product__info {
-        --product-info-width: 50%;
+        --product-info-width: 54.5%;
     }
 
     product-media.product__media.new-big-redesign-ab-test-a.became-visible {
