@@ -3010,6 +3010,51 @@ span.zerosense_text--main {
 	padding: 8px 19px !important;
 }
 
+.product_meta_support_level summary {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1;
+    border: 1px 1 1 1;
+    padding: 1.5rem 0;
+}
+
+svg.icon.icon-caret {
+    width: 24px;
+    height: 10px;
+}
+
+h2.h4.accordion__title.inline-richtext {
+    font-size: 16px;
+    font-size: 16px !important;
+    font-family: Inter, sans-serif !important;
+    padding-left: 0;
+    padding-right: 0;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+details#Details-collapsible_tab_template--26722997338459__main {}
+
+details.product_meta_support_level {border-bottom: .1rem solid rgba(45, 42, 38, .08);border-top: .1rem solid rgba(45, 42, 38, .08);/* padding-bottom: 15px; */}
+
+span.product_support_level {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.product_support_level svg {
+    width: 24px;
+    height: 10px;
+}
+
+.custom_meta_accordion {
+    padding-bottom: 15px;
+}
 
 @media screen and (min-width: 990px) {
     product-media.product__media.new-big-redesign-ab-test-a.became-visible {
