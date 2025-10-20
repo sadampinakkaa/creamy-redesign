@@ -2914,6 +2914,9 @@ img.header__logo-image.new-big-redesign-ab-test-a {
   max-width: 120px;
 }
 
+.header.header--bordered span.header__logo {
+    display: none;
+}
 
 /* product page */
 
