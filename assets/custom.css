@@ -3036,9 +3036,10 @@ h2.h4.accordion__title.inline-richtext {
     font-weight: 700;
 }
 
-details#Details-collapsible_tab_template--26722997338459__main {}
 
-details.product_meta_support_level {border-bottom: .1rem solid rgba(45, 42, 38, .08);border-top: .1rem solid rgba(45, 42, 38, .08);/* padding-bottom: 15px; */}
+details.product_meta_support_level {
+	border-bottom: .1rem solid rgba(45, 42, 38, .08);border-top: .1rem solid rgba(45, 42, 38, .08);
+}
 
 span.product_support_level {
     font-size: 12px;
