@@ -41,12 +41,36 @@
         "support_level_aPqT9J": {
           "type": "Support_level",
           "settings": {}
+        },
+        "custom_accordion_rb4bc6": {
+          "type": "custom-accordion",
+          "settings": {
+            "custom_header": "{{ product.title }}",
+            "custom_text": "{{ product.metafields.custom.product_card_small_description.value }}"
+          }
+        },
+        "custom_accordion_7drnr9": {
+          "type": "custom-accordion",
+          "settings": {
+            "custom_header": "",
+            "custom_text": ""
+          }
+        },
+        "custom_accordion_CcBVea": {
+          "type": "custom-accordion",
+          "settings": {
+            "custom_header": "",
+            "custom_text": ""
+          }
         }
       },
       "block_order": [
         "variant_picker",
         "buy_buttons",
-        "support_level_aPqT9J"
+        "support_level_aPqT9J",
+        "custom_accordion_rb4bc6",
+        "custom_accordion_7drnr9",
+        "custom_accordion_CcBVea"
       ],
       "settings": {
         "show_vendor": false,
