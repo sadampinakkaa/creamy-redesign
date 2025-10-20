@@ -3086,12 +3086,12 @@ h2.h4.accordion__title.inline-richtext {
 @media screen and (min-width: 990px) {
 
     .product--thumbnails-bottom .product__info {
-        --product-info-width:  45.5% !important;
+        --product-info-width:  48% !important;
     }
 
     product-media.product__media.new-big-redesign-ab-test-a.became-visible {
     margin: 0;
     padding: 0;
-    width: 54.5%;
+    width: 52%;
  }
 }
