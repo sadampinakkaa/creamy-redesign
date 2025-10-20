@@ -3016,8 +3016,8 @@ span.zerosense_text--main {
     justify-content: space-between;
     align-items: center;
     line-height: 1;
-    border: 1px 1 1 1;
     padding: 1.5rem 0;
+	padding-right: 24px;
 }
 
 svg.icon.icon-caret {
