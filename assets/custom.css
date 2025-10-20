@@ -3063,6 +3063,25 @@ span.product_support_level {
     display: none;
 }
 
+.custom_accordion summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 24px 14px 0px;
+    border-bottom: .1rem solid rgba(45, 42, 38, .08);
+    border-top: .1rem 1.2px solid rgba(45, 42, 38, .08);
+    display: flex;
+   
+}
+
+details.custom_accordion {
+    border-bottom: .1rem solid rgba(45, 42, 38, .08);
+}
+
+h2.h4.accordion__title.inline-richtext {
+    margin: 0;
+}
+
 
 @media screen and (min-width: 990px) {
 
