@@ -3000,6 +3000,10 @@ span.zerosense_text--main {
 .product__info a.product-form__add-button.button.button--primary.button--full.klaviyo-bis-trigger {
     font-weight: 700;
 }
+.block-swatch__radio:checked+.block-swatch__item{
+	color:#fff;
+	background:#2d2a26;
+}
 
 @media screen and (min-width: 990px) {
      product-media.product__media.new-big-redesign-ab-test-a.became-visible {
