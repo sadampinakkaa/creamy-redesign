@@ -45,21 +45,21 @@
         "custom_accordion_rb4bc6": {
           "type": "custom-accordion",
           "settings": {
-            "custom_header": "{{ product.title }}",
-            "custom_text": "{{ product.metafields.custom.product_card_small_description.value }}"
+            "custom_header": "Details",
+            "custom_text": ""
           }
         },
         "custom_accordion_7drnr9": {
           "type": "custom-accordion",
           "settings": {
-            "custom_header": "",
+            "custom_header": "Fit and Fabric",
             "custom_text": ""
           }
         },
         "custom_accordion_CcBVea": {
           "type": "custom-accordion",
           "settings": {
-            "custom_header": "",
+            "custom_header": "Shipping and Returns",
             "custom_text": ""
           }
         }
