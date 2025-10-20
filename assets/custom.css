@@ -3059,7 +3059,7 @@ span.product_support_level {
 .custom_meta_accordion summary::-webkit-details-marker,
 .custom_meta_accordion summary summary::marker ,
 .custom_accordion summary::-webkit-details-marker ,
-.custom_accordion summary::marker {
+.custom_accordion summary summary::marker {
     display: none;
 }
 
