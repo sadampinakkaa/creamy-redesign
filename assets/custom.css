@@ -2991,10 +2991,11 @@ span.zerosense_text--main {
 }
 
 .product__info button#AddToCart {
-    min-width: 321px !important;
-    min-height: 51px !important;
-    font-size: 16px;
+       font-size: 16px;
     font-weight: 700;
+    max-width: 320px !important;
+    font-family: TSTARPRO Headline;
+    letter-spacing: .5px;
 }
 
 .product__info a.product-form__add-button.button.button--primary.button--full.klaviyo-bis-trigger {
