@@ -171,7 +171,7 @@
               {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
                 <div class="price text--subdued text--xsmall">
                   <div class="unit-price-measurement">
-                    <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
+                    <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money_with_currency  }}</span>
                     <span class="unit-price-measurement__separator">/</span>
 
                     {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
