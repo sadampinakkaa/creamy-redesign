@@ -3045,7 +3045,7 @@ span.product_support_level {
     font-size: 12px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .product_support_level svg {
