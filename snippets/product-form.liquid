@@ -6,8 +6,8 @@
 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
 
  <style>
-    #Details-collapsible_tab_{{ section.id }} summary::-webkit-details-marker,
-    #Details-collapsible_tab_{{ section.id }} summary::marker {
+    .custom_meta_accordion summary::-webkit-details-marker,
+    .custom_meta_accordion summary summary::marker {
       display: none;
     }
   </style>
