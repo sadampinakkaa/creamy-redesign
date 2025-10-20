@@ -99,6 +99,14 @@
   </details>
 {% endif %}
 
+        {% when 'custom-accordion' %}
+       <details id="Details-collapsible_tab_{{ section.id }}" class="custom_accordion">
+    <summary>
+      <h3> {{ block.settings.custom_header }}</h3>
+    </summary>
+    <div class="custom_text" >{{ block.settings.custom_text }}</div>
+  </details>
+
         {% when 'accordion_list' %}
           {% assign accordion_flag = false %}
           {% capture accordions %}
