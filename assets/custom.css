@@ -3057,7 +3057,14 @@ span.product_support_level {
     padding-bottom: 15px;
 }
 
+
+
 @media screen and (min-width: 990px) {
+
+    .product--thumbnails-bottom .product__info {
+        --product-info-width: 50%;
+    }
+
     product-media.product__media.new-big-redesign-ab-test-a.became-visible {
     margin: 0;
     padding: 0;
