@@ -3002,7 +3002,7 @@ span.zerosense_text--main {
 }
 .block-swatch__radio:checked+.block-swatch__item{
 	color:#fff;
-	background:#2d2a26;
+	background:#2d2a26 !important;
 }
 
 @media screen and (min-width: 990px) {
