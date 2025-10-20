@@ -5,6 +5,13 @@
 {%- assign size_label_list = 'general.label.size' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {%- assign product_form_id = 'product-form-' | append: section.id | append: '-' | append: product.id -%}
 
+ <style>
+    #Details-collapsible_tab_{{ section.id }} summary::-webkit-details-marker,
+    #Details-collapsible_tab_{{ section.id }} summary::marker {
+      display: none;
+    }
+  </style>
+
 <div class="product-form">
   {%- for block in section.blocks -%}{% comment %}start BSS Commerce Hide Price{% endcomment %}{% capture bss_lock_check %}{% render 'bss-lock-condition', scope: 'subject', subject: block, variable: 'transparent' %}{% endcapture %}{% if bss_lock_check contains 'true' %}{% render 'bss-hide-product-design', section: 'snippets/product-form.liquid', subject: block %}{% continue %}{% endif %}{% comment %}end BSS Commerce Hide Price{% endcomment %}
     {%- case block.type -%}
