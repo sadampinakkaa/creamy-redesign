@@ -3004,6 +3004,9 @@ span.zerosense_text--main {
 	color:#fff;
 	background:#2d2a26 !important;
 }
+.block-swatch__item {
+	padding: 8px 19px !important;
+}
 
 @media screen and (min-width: 990px) {
      product-media.product__media.new-big-redesign-ab-test-a.became-visible {
