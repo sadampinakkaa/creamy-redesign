@@ -3002,7 +3002,7 @@ span.zerosense_text--main {
 .product__info a.product-form__add-button.button.button--primary.button--full.klaviyo-bis-trigger {
     font-weight: 700;
 }
-.block-swatch__radio:checked+.block-swatch__item{
+.block-swatch__radio:checked+.block-swatch__item {
 	color:#fff;
 	background:#2d2a26 !important;
 }
@@ -3027,7 +3027,6 @@ svg.icon.icon-caret {
 
 h2.h4.accordion__title.inline-richtext {
     font-size: 16px;
-    font-size: 16px !important;
     font-family: Inter, sans-serif !important;
     padding-left: 0;
     padding-right: 0;
