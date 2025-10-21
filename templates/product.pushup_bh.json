@@ -65,6 +65,7 @@
         },
         "image_size_details_MqQgGa": {
           "type": "image__size_details",
+          "disabled": true,
           "settings": {
             "button_text": "Finde hier deine passende Größe",
             "footer_text": "",
