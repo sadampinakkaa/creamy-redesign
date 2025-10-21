@@ -105,10 +105,27 @@
       "settings": {
         "section_class": ""
       }
+    },
+    "custom_complementary_products_MnVhjQ": {
+      "type": "custom-complementary-products",
+      "name": "Custom Complementary Products",
+      "settings": {
+        "block_heading": "You may also like",
+        "make_collapsible_row": false,
+        "icon": "plus",
+        "product_list_limit": 4,
+        "products_per_page": 4,
+        "pagination_style": "dots",
+        "image_ratio": "portrait",
+        "enable_quick_add": false,
+        "picker_type": "button",
+        "swatch_shape": "circle"
+      }
     }
   },
   "order": [
     "main",
-    "product-content"
+    "product-content",
+    "custom_complementary_products_MnVhjQ"
   ]
 }
