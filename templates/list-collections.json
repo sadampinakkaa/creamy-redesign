@@ -11,10 +11,54 @@
   "sections": {
     "main": {
       "type": "main-list-collections",
-      "settings": {}
+      "disabled": true,
+      "settings": {
+        "collections_to_show": "all",
+        "show_collection_title": true
+      }
+    },
+    "collection_list_filter_QLNFfq": {
+      "type": "collection-list-filter",
+      "blocks": {
+        "collection_KLkaE8": {
+          "type": "collection",
+          "settings": {
+            "collection": "bestseller",
+            "custom_title": "",
+            "category": "women"
+          }
+        },
+        "collection_AhP4WL": {
+          "type": "collection",
+          "settings": {
+            "collection": "bm-bestperformer",
+            "custom_title": "",
+            "category": "women"
+          }
+        },
+        "collection_PiiyJg": {
+          "type": "collection",
+          "settings": {
+            "collection": "shorts",
+            "custom_title": "",
+            "category": "men"
+          }
+        }
+      },
+      "block_order": [
+        "collection_KLkaE8",
+        "collection_AhP4WL",
+        "collection_PiiyJg"
+      ],
+      "name": "Collection List with Filter",
+      "settings": {
+        "heading": "Shop Collections",
+        "subheading": "Discover our curated collections"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collection_list_filter_QLNFfq"
   ]
 }
