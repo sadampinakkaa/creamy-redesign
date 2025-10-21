@@ -62,6 +62,15 @@
             "custom_header": "Shipping and Returns",
             "custom_text": ""
           }
+        },
+        "image_size_details_MqQgGa": {
+          "type": "image__size_details",
+          "settings": {
+            "button_text": "Finde hier deine passende Größe",
+            "footer_text": "",
+            "modal_footer_description": "<p><strong>100% Passformgarantie</strong> und kostenloser Umtausch!</p>",
+            "modal_footer_button_text": "Wähle jetzt deine Größe"
+          }
         }
       },
       "block_order": [
@@ -70,7 +79,8 @@
         "support_level_aPqT9J",
         "custom_accordion_rb4bc6",
         "custom_accordion_7drnr9",
-        "custom_accordion_CcBVea"
+        "custom_accordion_CcBVea",
+        "image_size_details_MqQgGa"
       ],
       "settings": {
         "show_vendor": false,
