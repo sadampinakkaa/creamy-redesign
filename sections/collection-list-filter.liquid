@@ -148,7 +148,7 @@
           <div class="collection-item" data-category="{{ block.settings.category }}">
             <a href="{{ collections[block.settings.collection].url }}">
               {% if block.settings.custom_image != blank %}
-                <img 
+                <image
                   src="{{ block.settings.custom_image | image_url: width: 453 }}" 
                   alt="{{ collections[block.settings.collection].title }}"
                   class="collection-image"
@@ -156,12 +156,11 @@
                   
                 >
               {% elsif collections[block.settings.collection].featured_image %}
-                <img 
+                <image 
                   src="{{ collections[block.settings.collection].featured_image | image_url: width: 453 }}" 
                   alt="{{ collections[block.settings.collection].title }}"
                   class="collection-image"
                   width="453" 
-                 
                 >
               {% else %}
                 <div class="collection-image" style="background-color: #f5f5f5; display: flex; align-items: center; justify-content: center;">
