@@ -71,7 +71,7 @@
   >
     {%- if recommendations.performed and recommendations.products_count > 0 -%}
       <aside
-        aria-label="{{ 'accessibility.complementary_products' | t }}"
+        aria-label="Complementary products"
         {% if section.settings.make_collapsible_row %}
           class="product__accordion accordion"
         {% endif %}
@@ -104,7 +104,7 @@
               class="contains-card contains-card--product complementary-slider grid grid--6-col slider slider--everywhere"
               role="list"
               {% if number_of_slides > 1 %}
-                aria-label="{{ 'general.slider.name' | t }}"
+                aria-label="Slideshow"
               {% endif %}
             >
               {%- for product in recommendations.products
@@ -115,8 +115,8 @@
                   tabindex="-1"
                   role="group"
                   {% if number_of_slides > 1 %}
-                    aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
-                    aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                    aria-roledescription="Slide"
+                    aria-label="{{ forloop.index }} of {{ forloop.length }}"
                   {% endif %}
                 >
                   {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
@@ -138,7 +138,7 @@
                       {%- endfor -%}
 
                       {%- unless product.available -%}
-                        <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
+                        <span class="label label--subdued">Sold out</span>
                       {%- endunless -%}
 
                       {%- assign cheapest_variant = product.variants | sort: 'price' | first -%}
@@ -237,7 +237,7 @@
                           <div class="price-list price-list--centered">
                             {%- if product.price < product.compare_at_price -%}
                               <span class="price price--highlight">
-                                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                                <span class="visually-hidden">Sale price</span>
                                 {%- if settings.currency_code_enabled -%}
                                   {{- product.price | money_with_currency -}}
                                 {%- else -%}
@@ -245,7 +245,7 @@
                                 {%- endif -%}
                               </span>
                               <span class="price price--compare">
-                                <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+                                <span class="visually-hidden">Regular price</span>
                                 {%- if settings.currency_code_enabled -%}
                                   {{- product.compare_at_price | money_with_currency -}}
                                 {%- else -%}
@@ -261,12 +261,12 @@
                                 {%- endif -%}
                               {%- endcapture -%}
                               <span class="price">
-                                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
-                                {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+                                <span class="visually-hidden">Sale price</span>
+                                From {{ price_min }}
                               </span>
                             {%- else -%}
                               <span class="price">
-                                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                                <span class="visually-hidden">Sale price</span>
                                 {%- if settings.currency_code_enabled -%}
                                   {{- product.price | money_with_currency -}}
                                 {%- else -%}
@@ -295,7 +295,7 @@
                   type="button"
                   class="slider-button slider-button--prev"
                   name="previous"
-                  aria-label="{{ 'general.slider.previous_slide' | t }}"
+                  aria-label="Previous slide"
                 >
                   <span class="svg-wrapper">
                     {{- 'icon-caret.svg' | inline_asset_content -}}
@@ -305,14 +305,14 @@
                   {%- if section.settings.pagination_style == 'counter' -%}
                     <span class="slider-counter--current">1</span>
                     <span aria-hidden="true"> / </span>
-                    <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+                    <span class="visually-hidden">of</span>
                     <span class="slider-counter--total">{{ number_of_slides }}</span>
                   {%- else -%}
                     <div class="slideshow__control-wrapper">
                       {%- for i in (1..number_of_slides) -%}
                         <button
                           class="slider-counter__link slider-counter__link--{{ section.settings.pagination_style }} link"
-                          aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                          aria-label="Load slide {{ forloop.index }} of {{ forloop.length }}"
                           aria-controls="Slider-{{ section.id }}"
                         >
                           {%- if section.settings.pagination_style == 'numbers' -%}
@@ -329,7 +329,7 @@
                   type="button"
                   class="slider-button slider-button--next"
                   name="next"
-                  aria-label="{{ 'general.slider.next_slide' | t }}"
+                  aria-label="Next slide"
                 >
                   <span class="svg-wrapper">
                     {{- 'icon-caret.svg' | inline_asset_content -}}
@@ -343,12 +343,6 @@
           {%- endif -%}
         </div>
       </aside>
-    {%- endif -%}
-    {{ 'component-card.css' | asset_url | stylesheet_tag }}
-    {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
-    {%- if section.settings.enable_quick_add -%}
-      {{ 'quick-add.css' | asset_url | stylesheet_tag }}
-      <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   </product-recommendations>
 </section>
