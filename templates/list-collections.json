@@ -55,10 +55,45 @@
         "heading": "Shop Collections",
         "subheading": "Discover our curated collections"
       }
+    },
+    "image_with_text_XTHzGy": {
+      "type": "image-with-text",
+      "blocks": {
+        "item_rkAiJz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/ddbfa.avif",
+            "tab_label": "",
+            "subheading": "",
+            "title": "Looking for Something New?",
+            "content": "<p>Don’t miss the drops everyone’s talking about. Shop our latest collections now! They’re going to look so good on you.<br/><br/></p>",
+            "button_text": "SHOP NEW ARRIVALS",
+            "button_link": "shopify://collections"
+          }
+        }
+      },
+      "block_order": [
+        "item_rkAiJz"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "reveal_on_scroll": true,
+        "background_type": "full_width",
+        "background_overlap": "image",
+        "image_position": "left",
+        "text_alignment": "center",
+        "cycle_speed": 8,
+        "accent_background": "rgba(0,0,0,0)",
+        "text_color": "rgba(0,0,0,0)",
+        "button_background": "rgba(0,0,0,0)",
+        "button_text_color": "rgba(0,0,0,0)",
+        "section_class": ""
+      }
     }
   },
   "order": [
     "main",
-    "collection_list_filter_QLNFfq"
+    "collection_list_filter_QLNFfq",
+    "image_with_text_XTHzGy"
   ]
 }
