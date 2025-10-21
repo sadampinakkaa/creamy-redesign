@@ -1,5 +1,4 @@
-
- <style>
+<style>
   .custom-complementary-products .card__media .media {
     height: 100%;
 }
@@ -31,7 +30,6 @@
     min-height: 383px;
 }
 .custom-complementary-products .card-wrapper.product-card-wrapper {
-    {% comment %} padding: 20px; {% endcomment %}
     background: #fff;
 }
 .custom-complementary-products .card__badge.bottom.left {
@@ -41,7 +39,7 @@
 }
 
 .custom-complementary-products .card__badge.bottom.left span {
-        border-radius: 4px;
+    border-radius: 4px;
     padding: 10px 15px;
 }
 .custom-complementary-products button.quick-add__submit.button.button--full-width.button--secondary {
@@ -51,20 +49,20 @@
 .complementary-slide.complementary-slide--standard{
     min-width: 275px;
 }
- .custom-lg-hide {
-display:none;
+.custom-lg-hide {
+    display:none;
 } 
 @media (max-width: 1024px) {
   .custom-complementary-products {
     display: none !important;
   }
-   .custom-lg-hide {
-display:flex;
-} 
+  .custom-lg-hide {
+    display:flex;
+  } 
 }
- </style> 
+</style> 
 
-<section id="complementary-products-section-{{ section.id }}" class="complementary-products-sectio custom-complementary-products lg-hidden">
+<section id="complementary-products-section-{{ section.id }}" class="complementary-products-section custom-complementary-products lg-hidden">
   <product-recommendations
     class="complementary-products quick-add-hidden{% if section.settings.make_collapsible_row %} is-accordion{% endif %}{% if section.settings.enable_quick_add %} complementary-products-contains-quick-add{% endif %}"
     data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.product_list_limit }}&intent=complementary"
@@ -101,39 +99,195 @@ display:flex;
               | divided_by: section.settings.products_per_page
               | ceil
             -%}
-           <div
-  id="Slider-{{ section.id }}"
-  class="contains-card contains-card--product complementary-slider grid grid--6-col slider slider--everywhere"
-  role="list"
-  {% if number_of_slides > 1 %}
-    aria-label="{{ 'general.slider.name' | t }}"
-  {% endif %}
->
-  {%- for product in recommendations.products
-    limit: section.settings.products_per_page
-    offset: continue
-  -%}
-    <div class="complementary-slide complementary-slide--{{ settings.card_style }} "
-      tabindex="-1"
-      role="group"
-      {% if number_of_slides > 1 %}
-        aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
-        aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-      {% endif %}
-    >
-      {% render 'custom-card-product',
-        card_product: product,
-        media_aspect_ratio: section.settings.image_ratio,
-        show_secondary_image: false,
-        lazy_load: false,
-        quick_add: "none",
-        section_id: section.id,
-        block:section
-        
-      %}
-    </div>
-  {%- endfor -%}
-</div>
+            <div
+              id="Slider-{{ section.id }}"
+              class="contains-card contains-card--product complementary-slider grid grid--6-col slider slider--everywhere"
+              role="list"
+              {% if number_of_slides > 1 %}
+                aria-label="{{ 'general.slider.name' | t }}"
+              {% endif %}
+            >
+              {%- for product in recommendations.products
+                limit: section.settings.products_per_page
+                offset: continue
+              -%}
+                <div class="complementary-slide complementary-slide--{{ settings.card_style }}"
+                  tabindex="-1"
+                  role="group"
+                  {% if number_of_slides > 1 %}
+                    aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
+                    aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
+                  {% endif %}
+                >
+                  {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
+                  {%- assign color_white_label = 'general.label.white' | t | downcase -%}
+                  {%- assign quick_buy_icon_name = 'quick-buy-' | append: settings.cart_icon | replace: '_', '-' -%}
+
+                  {%- if product.url contains '?' -%}
+                    {%- assign product_url_contains_query = true -%}
+                  {%- else -%}
+                    {%- assign product_url_contains_query = false -%}
+                  {%- endif -%}
+
+                  <product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}">
+                    {%- capture product_labels -%}
+                      {%- for tag in product.tags -%}
+                        {%- if tag contains '__label' -%}
+                          <span class="label label--custom{% if tag contains '__label2' %}2{% endif %}">{{ tag | split: ':' | last }}</span>
+                        {%- endif -%}
+                      {%- endfor -%}
+
+                      {%- unless product.available -%}
+                        <span class="label label--subdued">{{ 'collection.product.sold_out' | t }}</span>
+                      {%- endunless -%}
+
+                      {%- assign cheapest_variant = product.variants | sort: 'price' | first -%}
+
+                      {%- if settings.show_discount and product.available and product.price < product.compare_at_price and cheapest_variant.compare_at_price != blank -%}
+                        {%- if settings.discount_mode == 'percentage' -%}
+                          {%- assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round | append: '%' -%}
+                        {%- else -%}
+                          {%- capture savings -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
+                        {%- endif -%}
+
+                        <span class="label label--highlight">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+                      {%- endif -%}
+                    {%- endcapture -%}
+
+                    <div class="product-item__image-wrapper {% if settings.show_secondary_image and product.media.size > 1 %}product-item__image-wrapper--multiple{% endif %}">
+                      {%- if product_labels != blank -%}
+                        <div class="product-item__label-list label-list">
+                          {{- product_labels -}}
+                        </div>
+                      {%- endif -%}
+
+                      <a
+                        href="{{ product.url }}"
+                        data-instant
+                        class="product-item__aspect-ratio aspect-ratio {% if settings.product_image_size != 'natural' %}aspect-ratio--{{ settings.product_image_size }}{% endif %}"
+                        style="padding-bottom: {{ 100.0 | divided_by: product.featured_media.preview_image.aspect_ratio }}%; --aspect-ratio: {{ product.featured_media.preview_image.aspect_ratio }}"
+                      >
+                        {%- if product.featured_media -%}
+                          {{
+                            product.featured_media
+                            | image_url: width: product.featured_media.width
+                            | image_tag:
+                              loading: 'lazy',
+                              sizes: '275px',
+                              widths: '200,300,400,500,600',
+                              class: 'product-item__primary-image',
+                              data-media-id: product.featured_media.id
+                          }}
+                        {%- endif -%}
+
+                        {%- if settings.show_secondary_image and product.media.size > 1 -%}
+                          {%- assign next_media = product.media[product.featured_media.position] | default: product.media[1] -%}
+                          {{-
+                            next_media
+                            | image_url: width: next_media.width
+                            | image_tag:
+                              loading: 'lazy',
+                              sizes: '275px',
+                              widths: '200,300,400,500,600',
+                              class: 'product-item__secondary-image'
+                          -}}
+                        {%- endif -%}
+                      </a>
+                    </div>
+
+                    <div class="product-item__info">
+                      {%- if product_labels != blank -%}
+                        <div class="product-item__label-list label-list CustomPosiitonBottom">
+                          {{- product_labels -}}
+                        </div>
+                      {%- endif -%}
+
+                      <div class="product-item-meta">
+                        {%- if settings.show_vendor -%}
+                          {%- assign vendor_handle = product.vendor | handle -%}
+                          {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+                          {%- unless collection_for_vendor.empty? -%}
+                            <a class="product-item-meta__vendor heading heading--xsmall" href="{{ collection_for_vendor.url }}" data-instant>
+                              {{- product.vendor -}}
+                            </a>
+                          {%- else -%}
+                            <a class="product-item-meta__vendor heading heading--xsmall" href="{{ product.vendor | url_for_vendor }}" data-instant>
+                              {{- product.vendor -}}
+                            </a>
+                          {%- endunless -%}
+                        {%- endif -%}
+
+                        {% liquid
+                          assign compared_product_title = product.title | split: '(#2)' | last | append: '(#2)'
+                          assign product_title = product.title
+                          if product.title == compared_product_title
+                            assign product_title = product_title | remove_last: '(#2)'
+                          endif
+                        %}
+                        <a href="{{ product.url }}" data-instant class="product-item-meta__title">{{ product_title }}</a>
+
+                        {% if product.metafields.custom.color_for_collection_pages != blank %}
+                          <span class="color--Metafeilds">
+                            {{ product.metafields.custom.color_for_collection_pages }}
+                          </span>
+                        {% endif %}
+                        
+                        <div class="product-item-meta__price-list-container">
+                          <div class="price-list price-list--centered">
+                            {%- if product.price < product.compare_at_price -%}
+                              <span class="price price--highlight">
+                                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                                {%- if settings.currency_code_enabled -%}
+                                  {{- product.price | money_with_currency -}}
+                                {%- else -%}
+                                  {{- product.price | money -}}
+                                {%- endif -%}
+                              </span>
+                              <span class="price price--compare">
+                                <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
+                                {%- if settings.currency_code_enabled -%}
+                                  {{- product.compare_at_price | money_with_currency -}}
+                                {%- else -%}
+                                  {{- product.compare_at_price | money -}}
+                                {%- endif -%}
+                              </span>
+                            {%- elsif product.price_varies -%}
+                              {%- capture price_min -%}
+                                {%- if settings.currency_code_enabled -%}
+                                  {{ product.price_min | money_with_currency }}
+                                {%- else -%}
+                                  {{ product.price_min | money }}
+                                {%- endif -%}
+                              {%- endcapture -%}
+                              <span class="price">
+                                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                                {{- 'collection.product.from_price_html' | t: price_min: price_min -}}
+                              </span>
+                            {%- else -%}
+                              <span class="price">
+                                <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
+                                {%- if settings.currency_code_enabled -%}
+                                  {{- product.price | money_with_currency -}}
+                                {%- else -%}
+                                  {{- product.price | money -}}
+                                {%- endif -%}
+                              </span>
+                            {%- endif -%}
+                          </div>
+                        </div>
+
+                        {%- if settings.show_product_rating -%}
+                          <a class="product-item-meta__reviews-badge text--small" href="{{ product.url }}" data-instant>
+                            {%- render 'product-rating', product: product -%}
+                          </a>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  </product-item>
+                </div>
+              {%- endfor -%}
+            </div>
 
             {%- if number_of_slides > 1 -%}
               <div class="slider-buttons">
@@ -198,6 +352,7 @@ display:flex;
     {%- endif -%}
   </product-recommendations>
 </section>
+
 
 {% schema %}
 {
